@@ -10,11 +10,13 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
-const { areaShares } = require('./grade.cjs');
+const { areaShares, finalMetrics, WORD_BUDGET } = require('./grade.cjs');
 
 const ROOT = path.join(__dirname, '..');
 const RUNS = process.env.CB_RUNS || path.join(ROOT, 'runs'); // CB_RUNS: grade something other than benchmark runs
-const A = 'haiku-low-v4', B = 'haiku-low-v4-b', T = 'sonnet-low-v4', OUT = 'consensus-v4';
+// --version v5 runs the same protocol on another prompt version (default v4)
+const V = process.argv.includes('--version') ? process.argv[process.argv.indexOf('--version') + 1] : 'v4';
+const A = `haiku-low-${V}`, B = `haiku-low-${V}-b`, T = `sonnet-low-${V}`, OUT = `consensus-${V}`;
 const read = (id, g) => {
   const p = path.join(RUNS, id, 'grades', `${g}.json`);
   return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : null;
@@ -75,16 +77,19 @@ for (const id of ids) {
   const flagged = passes.filter((p) => p.missing.length > 0);
   const missing = flagged.length * 2 > passes.length ? flagged[0].missing : [];
   const shares = areaShares(elements, labelOf, meta.canvas);
+  // passes already carry the word floor; take the median of the graders' own scores, then apply it once
+  const rawScore = median(passes.map((p) => Number(p.grader_clutter_score ?? p.clutter_score)));
+  const fm = finalMetrics(shares, rawScore, elements, Number(V.slice(1)) >= 5 ? WORD_BUDGET : null);
   const grade = {
     grader: OUT, protocol: `${A} x2, ${T} tiebreak`, gradedAt: new Date().toISOString(),
     consensus: { haikuAgreed: !d.any, elementsChanged: d.changed, tiebreak: !!t, scores: passes.map((p) => p.clutter_score) },
     main_idea: passes[0].main_idea, ideas: passes[0].ideas, summary: passes[0].summary,
-    clutter_score: median(passes.map((p) => Number(p.clutter_score))),
+    clutter_score: fm.clutter_score, ...(fm.wordBudget ? { grader_clutter_score: rawScore } : {}),
     completeness_score: median(passes.map((p) => Number(p.completeness_score ?? 10))),
     missing, defects: [...new Set(passes.flatMap((p) => p.defects || []))],
     regions,
     metrics: {
-      shares, clutterShare: Math.round((shares.red + shares.orange / 2) * 10) / 10,
+      shares, clutterShare: fm.clutterShare, areaShare: fm.areaShare, ...(fm.wordBudget ? { wordBudget: fm.wordBudget } : {}),
       ideaCount: passes[0].ideas.length, missingCount: missing.length,
       redByType: regions.filter((r) => r.label === 'red').reduce((m, r) => ((m[r.type] = (m[r.type] || 0) + r.ids.length), m), {}),
       coverage: Math.round((100 * Object.keys(labelOf).length) / (elements.length || 1)),

@@ -10,6 +10,11 @@ const { spawn } = require('child_process');
 const ROOT = path.join(__dirname, '..');
 const RUNS = process.env.CB_RUNS || path.join(ROOT, 'runs'); // CB_RUNS: grade something other than benchmark runs
 
+// v5 graders also charge for text past this many words (numbers not counted:
+// one value label per mark is legitimate). Every graphic Adam scored 0 has
+// 15 words or fewer; every raw graphic he reviewed has more than 65.
+const WORD_BUDGET = 25;
+
 // name -> model + prompt file. Add entries here to try other graders.
 const GRADERS = {
   'haiku-v1': { cli: 'claude', model: 'claude-haiku-5-5', effort: 'low', prompt: 'grader_v1.md' },
@@ -22,9 +27,10 @@ const GRADERS = {
 const V3_MODELS = { haiku: ['claude', 'claude-haiku-5-5'], sonnet: ['claude', 'claude-sonnet-5-5'], luna: ['codex', 'gpt-6-luna'] };
 for (const [m, [cli, model]] of Object.entries(V3_MODELS))
   for (const effort of ['low', 'medium', 'high', 'xhigh'])
-    for (const v of ['v3', 'v4']) GRADERS[`${m}-${effort}-${v}`] = { cli, model, effort, prompt: `grader_${v}.md` };
+    for (const v of ['v3', 'v4', 'v5']) GRADERS[`${m}-${effort}-${v}`] = { cli, model, effort, prompt: `grader_${v}.md`, wordBudget: v === 'v5' ? WORD_BUDGET : null };
 // second independent pass of the same grader, for the consensus protocol
 GRADERS['haiku-low-v4-b'] = { ...GRADERS['haiku-low-v4'] };
+GRADERS['haiku-low-v5-b'] = { ...GRADERS['haiku-low-v5'] };
 
 function arg(name, def) {
   const i = process.argv.indexOf(`--${name}`);
@@ -115,6 +121,33 @@ function areaShares(elements, labelOf, canvas) {
   return { blue: pct(n[1]), orange: pct(n[2]), red: pct(n[3]), unlabelled: pct(n[4]), paintedOfCanvas: Math.round((1000 * painted) / grid.length) / 10 };
 }
 
+// Words past the budget count like orange (half weight), as a share of all the
+// words drawn. clutterShare becomes the larger of the area and word measures,
+// and the 0-10 score cannot sit below one point per 15 words over budget.
+// The two measures are kept separately so either can be reported.
+function wordMetrics(elements, budget) {
+  const words = elements.filter((e) => e.text).flatMap((e) => e.text.split(/\s+/).filter(Boolean));
+  const counted = words.filter((w) => !/^[-+−–~≈<>$€£]?[\d.,]+(%|x|×|k|m|b|pp|pts?)?$/i.test(w)).length;
+  const over = Math.max(0, counted - budget);
+  return {
+    budget, counted, over,
+    wordShare: counted ? Math.round((1000 * over) / counted / 2) / 10 : 0,
+    scoreFloor: Math.min(10, Math.ceil(over / 15)),
+  };
+}
+
+// Final metrics for one grade. budget null = v4 and earlier: area only.
+function finalMetrics(shares, rawScore, elements, budget) {
+  const areaShare = Math.round((shares.red + shares.orange / 2) * 10) / 10;
+  if (budget == null) return { areaShare, clutterShare: areaShare, clutter_score: rawScore };
+  const w = wordMetrics(elements, budget);
+  return {
+    areaShare, wordBudget: w,
+    clutterShare: Math.max(areaShare, w.wordShare),
+    clutter_score: Math.max(Number(rawScore) || 0, w.scoreFloor),
+  };
+}
+
 async function gradeOne(id, name, g, force) {
   const dir = path.join(RUNS, id);
   const outPath = path.join(dir, 'grades', `${name}.json`);
@@ -146,9 +179,11 @@ async function gradeOne(id, name, g, force) {
     return { rid: `r${i}`, label: r.label, type: r.type, name: r.name || '', reason: r.reason || '', ids };
   }).filter((r) => r.ids.length);
   const shares = areaShares(elements, labelOf, canvas);
+  const fm = finalMetrics(shares, parsed.clutter_score, elements, g.wordBudget ?? null);
   const grade = {
     grader: name, model: g.model, effort: g.effort, prompt: g.prompt, gradedAt: new Date().toISOString(),
-    main_idea: parsed.main_idea, ideas: parsed.ideas || [], clutter_score: parsed.clutter_score, summary: parsed.summary,
+    main_idea: parsed.main_idea, ideas: parsed.ideas || [], clutter_score: fm.clutter_score,
+    ...(fm.wordBudget ? { grader_clutter_score: parsed.clutter_score } : {}), summary: parsed.summary,
     missing: (parsed.missing || []).map((m, i) => ({ mid: `m${i}`, what: m.what || '', why: m.why || '' })),
     completeness_score: parsed.completeness_score ?? null,
     defects: parsed.defects || [],
@@ -156,8 +191,10 @@ async function gradeOne(id, name, g, force) {
     regions,
     metrics: {
       shares,
-      // headline: share of drawn area that is clutter (orange counts half)
-      clutterShare: Math.round((shares.red + shares.orange / 2) * 10) / 10,
+      // headline: share of drawn area that is clutter (orange counts half);
+      // for v5, the larger of that and the words-over-budget share
+      clutterShare: fm.clutterShare, areaShare: fm.areaShare,
+      ...(fm.wordBudget ? { wordBudget: fm.wordBudget } : {}),
       ideaCount: (parsed.ideas || []).length,
       missingCount: (parsed.missing || []).length,
       redByType: regions.filter((r) => r.label === 'red').reduce((m, r) => ((m[r.type] = (m[r.type] || 0) + 1), m), {}),
@@ -183,5 +220,5 @@ async function main() {
     while (i < ids.length) await gradeOne(ids[i++], name, g, force);
   }));
 }
-module.exports = { areaShares };
+module.exports = { areaShares, finalMetrics, WORD_BUDGET };
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
