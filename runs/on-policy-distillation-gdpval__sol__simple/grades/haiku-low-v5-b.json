@@ -1,0 +1,98 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:08.027Z",
+ "main_idea": "On-policy distillation lifts GDPval net win-loss margin to about 21% across two model families",
+ "ideas": [
+  "GDPval net win-loss margin is the measured metric",
+  "Distilled models beat their base models",
+  "Nemotron and Qwen gains are similar, around 21%"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and complete: a simple bar chart with a bare metric title, labelled values and models; only the logo fails to render.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [
+  "Brand logo element e1 is not visible in the top-right corner of the screenshot"
+ ],
+ "cost": {
+  "seconds": 9,
+  "usd": 0.00202933,
+  "tokens": 35282,
+  "outputTokens": 1252
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and subtitle",
+   "reason": "Bare metric title plus short context naming the comparison; both short and needed.",
+   "ids": [
+    "e0",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and value labels",
+   "reason": "The data marks, each with one value label, carry the result.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Model category labels",
+   "reason": "Identify which model each bar stands for.",
+   "ids": [
+    "e7",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand logo",
+   "reason": "Brand mark is appropriate, but it does not render in the screenshot (see defects).",
+   "ids": [
+    "e1"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 44.7
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 10,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 12,
+  "textElements": 6
+ }
+}

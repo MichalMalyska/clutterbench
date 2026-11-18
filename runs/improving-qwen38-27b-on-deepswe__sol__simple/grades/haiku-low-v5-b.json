@@ -1,0 +1,87 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:54.529Z",
+ "main_idea": "GRPO lifts Qwen3.8-27B's DeepSWE pass@1 from 27.8% to 39.1%",
+ "ideas": [
+  "GRPO raises Qwen3.8-27B DeepSWE pass@1",
+  "Base scores 27.8%, after GRPO 39.1%",
+  "Metric is pass@1 averaged over three runs"
+ ],
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "summary": "Clean and nearly complete: one clear before-after bar chart with a named benchmark, metric, and brand mark; the uplift is readable from the bars without an explicit delta.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 9.5,
+  "usd": 0.0018922300000000002,
+  "tokens": 25481,
+  "outputTokens": 1154
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Before-after bar chart",
+   "reason": "Two labelled bars with values and categories show the main result directly.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Title and metric line",
+   "reason": "Names the model, benchmark, and metric in short plain chart-title form.",
+   "ids": [
+    "e0",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark, appropriately small and placed top right.",
+   "ids": [
+    "e1"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 33.9
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 13,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 15,
+  "textElements": 6
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:44.190Z",
+ "main_idea": "A simple prompt cuts clutter from 29-61% to near 0% across all models.",
+ "ideas": [
+  "Clutter score by model, raw vs simple prompt"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and complete: one dumbbell chart with a short title, a legend, labels and a single logo.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 6.5,
+  "usd": 0.0525302,
+  "tokens": 23867,
+  "outputTokens": 517
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title",
+   "reason": "Short title naming the metric.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "ClutterBench wordmark",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e1",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Legend",
+   "reason": "One legend identifying the two prompt conditions.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Model labels",
+   "reason": "Category labels needed to read rows.",
+   "ids": [
+    "e7",
+    "e12",
+    "e17",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Dots and values",
+   "reason": "Data marks with one value label each.",
+   "ids": [
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 5
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 16,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 1,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 26,
+  "textElements": 17
+ }
+}

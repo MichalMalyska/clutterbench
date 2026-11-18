@@ -1,0 +1,189 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:14:41.467Z",
+ "main_idea": "BAR spans 5,161 legal cases across 28 practice areas.",
+ "ideas": [
+  "BAR has 5,161 legal cases",
+  "Covers 28 practice areas",
+  "Benchmark built from real legal work"
+ ],
+ "clutter_score": 4,
+ "grader_clutter_score": 4,
+ "summary": "The decorative tile grid and slogan headline and tagline clutter a graphic whose counts are clear, and the grid lacks any legend explaining its marks.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "what the marks encode",
+   "why": "The tile grid has no legend or scale, so readers cannot tell what each mark stands for."
+  }
+ ],
+ "completeness_score": 7,
+ "defects": [],
+ "cost": {
+  "seconds": 12.6,
+  "usd": 0.00345425,
+  "tokens": 27834,
+  "outputTokens": 1785
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand and benchmark name",
+   "reason": "Logo plus benchmark name tell the reader what is measured.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Case and area counts",
+   "reason": "The two headline numbers with their unit labels carry the main point.",
+   "ids": [
+    "e80",
+    "e81",
+    "e82",
+    "e83"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding; the stats already carry the point.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Decorative tile grid",
+   "reason": "Count drawn as many repeated marks; the stated numbers alone would do. Marks encode no legible value.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45",
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50",
+    "e51",
+    "e52",
+    "e53",
+    "e54",
+    "e55",
+    "e56",
+    "e57",
+    "e58",
+    "e59",
+    "e60",
+    "e61",
+    "e62",
+    "e63",
+    "e64",
+    "e65",
+    "e66",
+    "e67",
+    "e68",
+    "e69",
+    "e70",
+    "e71",
+    "e72",
+    "e73",
+    "e74",
+    "e75",
+    "e76",
+    "e77",
+    "e78",
+    "e79"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Tagline footer",
+   "reason": "Tagline restating the benchmark's purpose; adds nothing to the counts.",
+   "ids": [
+    "e84"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 4.6,
+   "orange": 85.7,
+   "red": 9.7,
+   "unlabelled": 0,
+   "paintedOfCanvas": 41.1
+  },
+  "clutterShare": 52.6,
+  "areaShare": 52.6,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 23,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 1,
+  "redByType": {
+   "unneeded": 2
+  },
+  "coverage": 100,
+  "words": 24,
+  "textElements": 7
+ }
+}

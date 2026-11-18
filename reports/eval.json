@@ -159,6 +159,134 @@
      "red": 124
     }
    }
+  },
+  {
+   "grader": "haiku-low-v5",
+   "runs": 12,
+   "elements": 397,
+   "labelAcc": 58.2,
+   "runAcc": 73.7,
+   "cutAcc": 80.1,
+   "scoreMAE": 1.08,
+   "scoreRho": 0.88,
+   "shareMAE": 13.7,
+   "missing": "2/2 caught, 2 false",
+   "seconds": 14.1,
+   "usd": 0.004,
+   "tokens": 30637,
+   "conf": {
+    "blue": {
+     "blue": 104,
+     "orange": 77,
+     "red": 22
+    },
+    "orange": {
+     "blue": 10,
+     "orange": 1,
+     "red": 45
+    },
+    "red": {
+     "blue": 11,
+     "orange": 1,
+     "red": 126
+    }
+   }
+  },
+  {
+   "grader": "consensus-v5",
+   "runs": 12,
+   "elements": 397,
+   "labelAcc": 57.7,
+   "runAcc": 73,
+   "cutAcc": 59.9,
+   "scoreMAE": 1.33,
+   "scoreRho": 0.86,
+   "shareMAE": 18.1,
+   "missing": "0/2 caught, 1 false",
+   "seconds": null,
+   "usd": null,
+   "tokens": null,
+   "conf": {
+    "blue": {
+     "blue": 100,
+     "orange": 0,
+     "red": 103
+    },
+    "orange": {
+     "blue": 9,
+     "orange": 1,
+     "red": 46
+    },
+    "red": {
+     "blue": 10,
+     "orange": 0,
+     "red": 128
+    }
+   }
+  },
+  {
+   "grader": "haiku-low-v5-b",
+   "runs": 12,
+   "elements": 397,
+   "labelAcc": 57.4,
+   "runAcc": 72.3,
+   "cutAcc": 60.2,
+   "scoreMAE": 1.33,
+   "scoreRho": 0.88,
+   "shareMAE": 17.7,
+   "missing": "0/2 caught, 2 false",
+   "seconds": 13.3,
+   "usd": 0.002,
+   "tokens": 30498,
+   "conf": {
+    "blue": {
+     "blue": 102,
+     "orange": 0,
+     "red": 101
+    },
+    "orange": {
+     "blue": 11,
+     "orange": 1,
+     "red": 44
+    },
+    "red": {
+     "blue": 13,
+     "orange": 0,
+     "red": 125
+    }
+   }
+  },
+  {
+   "grader": "sonnet-low-v5",
+   "runs": 10,
+   "elements": 377,
+   "labelAcc": 57.8,
+   "runAcc": 68.9,
+   "cutAcc": 62.9,
+   "scoreMAE": 1.7,
+   "scoreRho": 0.73,
+   "shareMAE": 22.4,
+   "missing": "0/2 caught, 1 false",
+   "seconds": 9.2,
+   "usd": 0.066,
+   "tokens": 28541,
+   "conf": {
+    "blue": {
+     "blue": 87,
+     "orange": 5,
+     "red": 91
+    },
+    "orange": {
+     "blue": 14,
+     "orange": 3,
+     "red": 39
+    },
+    "red": {
+     "blue": 10,
+     "orange": 0,
+     "red": 128
+    }
+   }
   }
  ],
  "dev": [
@@ -227,6 +355,38 @@
    }
   },
   {
+   "grader": "consensus-v5",
+   "runs": 12,
+   "elements": 211,
+   "labelAcc": 89.6,
+   "runAcc": 93.6,
+   "cutAcc": 90.5,
+   "scoreMAE": 0.75,
+   "scoreRho": 0.92,
+   "shareMAE": 6.2,
+   "missing": "1/1 caught, 0 false",
+   "seconds": null,
+   "usd": null,
+   "tokens": null,
+   "conf": {
+    "blue": {
+     "blue": 118,
+     "orange": 0,
+     "red": 1
+    },
+    "orange": {
+     "blue": 2,
+     "orange": 4,
+     "red": 16
+    },
+    "red": {
+     "blue": 3,
+     "orange": 0,
+     "red": 67
+    }
+   }
+  },
+  {
    "grader": "luna-low-v4",
    "runs": 12,
    "elements": 211,
@@ -255,6 +415,70 @@
      "blue": 4,
      "orange": 0,
      "red": 66
+    }
+   }
+  },
+  {
+   "grader": "haiku-low-v5",
+   "runs": 12,
+   "elements": 211,
+   "labelAcc": 89.1,
+   "runAcc": 93.3,
+   "cutAcc": 90,
+   "scoreMAE": 0.83,
+   "scoreRho": 0.89,
+   "shareMAE": 5.9,
+   "missing": "1/1 caught, 1 false",
+   "seconds": 13,
+   "usd": 0.004,
+   "tokens": 29622,
+   "conf": {
+    "blue": {
+     "blue": 117,
+     "orange": 0,
+     "red": 2
+    },
+    "orange": {
+     "blue": 2,
+     "orange": 4,
+     "red": 16
+    },
+    "red": {
+     "blue": 2,
+     "orange": 1,
+     "red": 67
+    }
+   }
+  },
+  {
+   "grader": "haiku-low-v5-b",
+   "runs": 12,
+   "elements": 211,
+   "labelAcc": 88.6,
+   "runAcc": 93,
+   "cutAcc": 89.6,
+   "scoreMAE": 0.92,
+   "scoreRho": 0.92,
+   "shareMAE": 6.3,
+   "missing": "1/1 caught, 0 false",
+   "seconds": 12.3,
+   "usd": 0.002,
+   "tokens": 29440,
+   "conf": {
+    "blue": {
+     "blue": 118,
+     "orange": 0,
+     "red": 1
+    },
+    "orange": {
+     "blue": 2,
+     "orange": 4,
+     "red": 16
+    },
+    "red": {
+     "blue": 5,
+     "orange": 0,
+     "red": 65
     }
    }
   },
@@ -319,6 +543,38 @@
      "blue": 3,
      "orange": 0,
      "red": 67
+    }
+   }
+  },
+  {
+   "grader": "sonnet-low-v5",
+   "runs": 7,
+   "elements": 153,
+   "labelAcc": 85,
+   "runAcc": 88.7,
+   "cutAcc": 88.2,
+   "scoreMAE": 0.71,
+   "scoreRho": 0.91,
+   "shareMAE": 9.5,
+   "missing": "1/1 caught, 0 false",
+   "seconds": 9.4,
+   "usd": 0.062,
+   "tokens": 26831,
+   "conf": {
+    "blue": {
+     "blue": 71,
+     "orange": 4,
+     "red": 1
+    },
+    "orange": {
+     "blue": 1,
+     "orange": 5,
+     "red": 14
+    },
+    "red": {
+     "blue": 3,
+     "orange": 0,
+     "red": 54
     }
    }
   }

@@ -1,0 +1,179 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:56.919Z",
+ "main_idea": "GRPO raised Qwen3.8-27B's DeepSWE pass@1 from 27.8% to 39.1%.",
+ "ideas": [
+  "GRPO lifted DeepSWE pass@1 by 11.3 points",
+  "Base model 27.8% versus step 15 at 39.1%",
+  "Training used 500 expert-authored tasks"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "A clear result chart is surrounded by a slogan headline, kicker lines, a dataset stats row, two method cards and a footer tagline that should go.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 12.6,
+  "usd": 0.00228333,
+  "tokens": 27749,
+  "outputTokens": 1921
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Main result chart",
+   "reason": "Bars, values, axis, benchmark, metric and the +11.3 change annotation carry the finding.",
+   "ids": [
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark at the top of the graphic.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Generic slogan that does not state the measured finding; the chart title should carry it.",
+   "ids": [
+    "e7"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Series tag",
+   "reason": "Top-right kicker tag repeats the category and adds nothing to the result.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow line",
+   "reason": "Kicker above the headline restating the topic and model.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle paragraph",
+   "reason": "Explains training set-up; the chart and footnote already cover it.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset stats row",
+   "reason": "Dataset counts and training updates are a second point beside the main result.",
+   "ids": [
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method and data cards",
+   "reason": "Two explanatory cards on method and data serve a second point, not the chart.",
+   "ids": [
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer tagline",
+   "reason": "Repeated brand line and tagline add nothing the reader needs.",
+   "ids": [
+    "e41",
+    "e42",
+    "e43"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 33.5,
+   "orange": 0,
+   "red": 66.5,
+   "unlabelled": 0,
+   "paintedOfCanvas": 23.4
+  },
+  "clutterShare": 66.5,
+  "areaShare": 66.5,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 93,
+   "over": 68,
+   "wordShare": 36.6,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 5,
+   "extra_idea": 2
+  },
+  "coverage": 100,
+  "words": 106,
+  "textElements": 27
+ }
+}

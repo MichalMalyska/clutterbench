@@ -1,0 +1,133 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:27.469Z",
+ "main_idea": "Harness changes informed by BAR raised Legora's output quality 5% in one month, same models.",
+ "ideas": [
+  "BAR-informed harness changes improved output quality 5%",
+  "BAR evaluation feeds harness changes",
+  "Models stayed the same"
+ ],
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "summary": "The graphic shows a pipeline diagram instead of a result chart, so the BAR box, harness step and icons crowd the single +5% stat.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "baseline or what +5% compares",
+   "why": "Reader cannot see before/after; only a single stat with no chart."
+  }
+ ],
+ "completeness_score": 7,
+ "defects": [],
+ "cost": {
+  "seconds": 8.8,
+  "usd": 0.056130200000000005,
+  "tokens": 23171,
+  "outputTokens": 697
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "Slogan-like phrasing; could be: \"BAR-guided changes lift output quality 5%\".",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "BAR evaluation box",
+   "reason": "Pipeline step with document icon; the result is the +5%, not the process.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Harness changes step",
+   "reason": "Method diagram with slider icon and arrow; illustration, not the result.",
+   "ids": [
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Same models label",
+   "reason": "Short context that frames the comparison.",
+   "ids": [
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% output quality",
+   "reason": "The result with its metric; the up arrow is small.",
+   "ids": [
+    "e15",
+    "e16",
+    "e17",
+    "e18"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 23.5,
+   "orange": 3.1,
+   "red": 73.4,
+   "unlabelled": 0,
+   "paintedOfCanvas": 65.1
+  },
+  "clutterShare": 75,
+  "areaShare": 75,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 17,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 1,
+  "redByType": {
+   "extra_idea": 1,
+   "unneeded": 1
+  },
+  "coverage": 100,
+  "words": 17,
+  "textElements": 7
+ }
+}

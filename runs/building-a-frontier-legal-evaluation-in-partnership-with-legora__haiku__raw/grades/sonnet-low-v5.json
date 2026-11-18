@@ -1,0 +1,206 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:29.527Z",
+ "main_idea": "AfterQuery and Legora built BAR, a large legal agent benchmark that improved Legora's product.",
+ "ideas": [
+  "BAR is a frontier legal benchmark",
+  "BAR scale: cases, practice areas, documents",
+  "BAR-informed changes raised output quality 5%",
+  "Cases grounded in realistic law-firm matters"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "The stats row is the real content, but the oversized topic headline, intro paragraph, tag, 28-cell grid with caption, and footer tagline add clutter, and no chart shows the result.",
+ "missing": [],
+ "completeness_score": 8,
+ "defects": [],
+ "cost": {
+  "seconds": 10.8,
+  "usd": 0.06228689999999999,
+  "tokens": 24816,
+  "outputTokens": 1047
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Blog tag",
+   "reason": "Category tag/eyebrow that tells the reader nothing needed.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "Huge topic title that names no finding; could be: \"BAR: a frontier legal benchmark\"",
+   "ids": [
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Intro paragraph",
+   "reason": "Paragraph explaining the post; the benchmark name is the only useful part.",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark scale stats",
+   "reason": "Core numbers describing the benchmark's size, each labelled.",
+   "ids": [
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e14",
+    "e15",
+    "e16"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% result",
+   "reason": "The post's result, labelled with metric and period.",
+   "ids": [
+    "e13",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Practice area grid",
+   "reason": "28 identical cells repeat the count of 28 practice areas.",
+   "ids": [
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45",
+    "e46",
+    "e47"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Grid caption",
+   "reason": "Caption for the redundant grid.",
+   "ids": [
+    "e39"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Grounding sentence",
+   "reason": "Explanatory sentence on a side point.",
+   "ids": [
+    "e40"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer wordmark",
+   "reason": "Second brand mention plus tagline and decorative dot.",
+   "ids": [
+    "e48",
+    "e49"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "blue",
+   "type": "core",
+   "name": "Contact email",
+   "reason": "Quiet contact line.",
+   "ids": [
+    "e50"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 22.3,
+   "orange": 38.9,
+   "red": 38.8,
+   "unlabelled": 0,
+   "paintedOfCanvas": 38.6
+  },
+  "clutterShare": 58.3,
+  "areaShare": 58.3,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 73,
+   "over": 48,
+   "wordShare": 32.9,
+   "scoreFloor": 4
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 1,
+   "repetition": 2
+  },
+  "coverage": 100,
+  "words": 77,
+  "textElements": 18
+ }
+}

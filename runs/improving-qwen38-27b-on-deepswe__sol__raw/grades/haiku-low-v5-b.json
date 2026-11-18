@@ -1,0 +1,165 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:56.198Z",
+ "main_idea": "GRPO lifts Qwen3.8-27B DeepSWE pass@1 from 27.8% to 39.1%",
+ "ideas": [
+  "GRPO raises DeepSWE pass@1 from 27.8% to 39.1%",
+  "Training improves the base model by 11.3 points",
+  "Training used 500 expert-authored tasks"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "The bar chart carries the result cleanly, but the slogan, eyebrow, duplicate +11.3 callout and dataset stats row are clutter that should go.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 11.2,
+  "usd": 0.0021894,
+  "tokens": 26988,
+  "outputTokens": 1746
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "One brand mark, carries the source.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag above the headline; tells the reader nothing needed.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Subtitle with model and benchmark",
+   "reason": "Names the model, benchmark and method being measured.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and metric",
+   "reason": "Names the DeepSWE pass@1 metric and averaging.",
+   "ids": [
+    "e4",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "repetition",
+   "name": "+11.3 points callout",
+   "reason": "Stat card restating the difference the bars already show.",
+   "ids": [
+    "e5",
+    "e6",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars, values and axis",
+   "reason": "Main visual: two labelled bars with values and category labels.",
+   "ids": [
+    "e9",
+    "e10",
+    "e11",
+    "e13",
+    "e12",
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset stats row",
+   "reason": "Dataset sizes and training-data pitch serve a second point, not the result.",
+   "ids": [
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footer",
+   "reason": "Quiet evaluation detail and contact URL.",
+   "ids": [
+    "e27",
+    "e28"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 56.3,
+   "orange": 0,
+   "red": 43.7,
+   "unlabelled": 0,
+   "paintedOfCanvas": 35
+  },
+  "clutterShare": 43.7,
+  "areaShare": 43.7,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 62,
+   "over": 37,
+   "wordShare": 29.8,
+   "scoreFloor": 3
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "repetition": 1,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 66,
+  "textElements": 21
+ }
+}

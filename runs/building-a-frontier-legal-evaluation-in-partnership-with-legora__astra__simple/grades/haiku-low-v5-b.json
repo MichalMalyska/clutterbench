@@ -1,0 +1,143 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:42.531Z",
+ "main_idea": "Harness changes lifted BAR-measured output quality 5% in a month, same models",
+ "ideas": [
+  "Harness changes raised output quality 5%",
+  "Gain came in one month",
+  "Same production models were used",
+  "Measured on the BAR legal benchmark"
+ ],
+ "clutter_score": 4,
+ "grader_clutter_score": 4,
+ "summary": "The BAR evaluation card and icon decorations are extra; the graphic lacks a named benchmark, so the 5% result is unanchored.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "benchmark name",
+   "why": "BAR appears only in a card being removed; the reader cannot tell what was measured."
+  }
+ ],
+ "completeness_score": 6,
+ "defects": [],
+ "cost": {
+  "seconds": 15.2,
+  "usd": 0.0023339400000000005,
+  "tokens": 26191,
+  "outputTokens": 2046
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% output quality stat",
+   "reason": "The main result: a single value with its metric, unchanged by the reader's needs.",
+   "ids": [
+    "e16",
+    "e17",
+    "e18",
+    "e15"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Harness changes step",
+   "reason": "Names the intervention that produced the 5% gain.",
+   "ids": [
+    "e9"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "One month timing",
+   "reason": "Arrow and label give the time frame of the change.",
+   "ids": [
+    "e11",
+    "e14"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Same models frame",
+   "reason": "Small group label stating the models were held constant; needed for the claim.",
+   "ids": [
+    "e6",
+    "e7",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline and logo",
+   "reason": "Headline states the finding briefly; one brand mark is allowed.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "BAR evaluation pipeline card",
+   "reason": "Pipeline step with icon; the benchmark name belongs in a footnote, not a card.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slider icon dots",
+   "reason": "Decorative circles of the slider icon encode nothing.",
+   "ids": [
+    "e10",
+    "e12",
+    "e13"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 75.2,
+   "orange": 0,
+   "red": 24.8,
+   "unlabelled": 0,
+   "paintedOfCanvas": 65.1
+  },
+  "clutterShare": 24.8,
+  "areaShare": 24.8,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 17,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 4,
+  "missingCount": 1,
+  "redByType": {
+   "extra_idea": 1,
+   "unneeded": 1
+  },
+  "coverage": 100,
+  "words": 17,
+  "textElements": 7
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:24.824Z",
+ "main_idea": "SFT plus RLVR lifts gpt-oss-20b's Terminal-Bench 2.0 pass rate over 5x",
+ "ideas": [
+  "Training lifts Terminal-Bench 2.0 pass rate over 5x",
+  "Base 3.1% rises to 17.0% after SFT and RLVR",
+  "SFT alone gets most of the gain"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "The bars and headline carry the result cleanly; the eyebrow, nav, subtitle, and especially the two stage cards with gold tags are extras that should go.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [
+  "Value labels 13.5% and 17.0% extend past the right margin rule",
+  "Headline 'Over 5x' is correct; no overlap or cut-off seen",
+  "Logo renders correctly in the screenshot"
+ ],
+ "cost": {
+  "seconds": 14.3,
+  "usd": 0.0025418899999999998,
+  "tokens": 32877,
+  "outputTokens": 2332
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand logo",
+   "reason": "One brand mark, kept as is.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Section nav tag",
+   "reason": "Blog and section nav adds nothing to the finding.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow kicker",
+   "reason": "Kicker line above the headline; does not state the finding.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline finding",
+   "reason": "Names the finding and benchmark in two short lines.",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph restates the chart's values and set-up.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and rule",
+   "reason": "Short chart title names the metric and agent.",
+   "ids": [
+    "e7",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Base model bar",
+   "reason": "Bar, label, value and model name for the base result.",
+   "ids": [
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "blue",
+   "type": "core",
+   "name": "SFT only bar",
+   "reason": "Bar, label, value and method for the intermediate result.",
+   "ids": [
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "blue",
+   "type": "core",
+   "name": "SFT plus RLVR bar",
+   "reason": "Bar, label, value and method for the final result.",
+   "ids": [
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Stage method cards",
+   "reason": "Training pipeline cards and gold tags are a second point beside the results chart.",
+   "ids": [
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "blue",
+   "type": "core",
+   "name": "Eval footer",
+   "reason": "Quiet footnote with benchmark details and contact line.",
+   "ids": [
+    "e38",
+    "e39",
+    "e40"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 67.2,
+   "orange": 0,
+   "red": 32.8,
+   "unlabelled": 0,
+   "paintedOfCanvas": 36.9
+  },
+  "clutterShare": 36.7,
+  "areaShare": 32.8,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 94,
+   "over": 69,
+   "wordShare": 36.7,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 110,
+  "textElements": 25
+ }
+}

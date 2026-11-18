@@ -1,0 +1,116 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:23.079Z",
+ "main_idea": "Two-stage training lifts gpt-oss-20b Terminal-Bench 2.0 pass rate from 3.1% to 17.0%",
+ "ideas": [
+  "Training lifts Terminal-Bench 2.0 pass rate from 3.1% to 17.0%",
+  "SFT gives most of the gain; RLVR adds more on top"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and complete: one bar chart with benchmark, metric, labelled stages and values; nothing to remove.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 9.7,
+  "usd": 0.0035097500000000007,
+  "tokens": 30319,
+  "outputTokens": 1257
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark chart title",
+   "reason": "Names the benchmark as a plain chart title; short and clear.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and metric subtitle",
+   "reason": "Names the model and metric (pass rate); short context the reader needs.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark, small and unobtrusive.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Result bars",
+   "reason": "The marks that carry the three pass-rate values.",
+   "ids": [
+    "e4",
+    "e6",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Bar value labels",
+   "reason": "One value label per bar, as needed to read the result.",
+   "ids": [
+    "e3",
+    "e5",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Stage category labels",
+   "reason": "Labels each bar by training stage; needed to read the chart.",
+   "ids": [
+    "e9",
+    "e10",
+    "e11"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 33.4
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 11,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 2,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 14,
+  "textElements": 8
+ }
+}

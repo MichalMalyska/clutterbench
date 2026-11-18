@@ -1,0 +1,111 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:51.895Z",
+ "main_idea": "A simple prompt cuts graphic clutter from 29-61% down to 0-6%.",
+ "ideas": [
+  "Raw prompts produce cluttered graphics across all four models",
+  "Simple prompt drops clutter to near zero",
+  "Clutter score is the metric measured"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and nearly complete: a short metric title, one legend, and a labelled dumbbell chart; only the score's definition is absent.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "definition of the score",
+   "why": "Values are percentages with no note that they are the share of drawn area flagged for removal."
+  }
+ ],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 10.2,
+  "usd": 0.0018968499999999998,
+  "tokens": 26201,
+  "outputTokens": 1172
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Title and logo",
+   "reason": "Short metric headline names what is measured; one brand mark.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Prompt legend",
+   "reason": "One legend identifying the two series, short and needed to read the dots.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Model dumbbell chart",
+   "reason": "Main visual: each model's raw and simple values, labelled once with model names.",
+   "ids": [
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 5
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 16,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 1,
+  "redByType": {},
+  "coverage": 100,
+  "words": 26,
+  "textElements": 17
+ }
+}

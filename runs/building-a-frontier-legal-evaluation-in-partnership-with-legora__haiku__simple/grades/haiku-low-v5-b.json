@@ -1,0 +1,71 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:36.280Z",
+ "main_idea": "Harness changes informed by BAR raised output quality 5% in one month.",
+ "ideas": [
+  "Harness changes informed by BAR raised output quality 5%",
+  "Gain came within one month"
+ ],
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "summary": "Clean and nearly complete: a single +5% stat with a caption and logo; the caption could name the benchmark more fully, but the reader can tell what was measured.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 8.9,
+  "usd": 0.0017243400000000002,
+  "tokens": 24502,
+  "outputTokens": 817
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Result stat with caption",
+   "reason": "Large +5% result with a short caption naming the metric and BAR.",
+   "ids": [
+    "e1",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark, quiet and visible.",
+   "ids": [
+    "e0"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 61.7
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 12,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 2,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 12,
+  "textElements": 2
+ }
+}

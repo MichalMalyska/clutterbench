@@ -1,0 +1,221 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:51.729Z",
+ "main_idea": "A simple prompt cuts clutter from 29-61% to near zero for every model.",
+ "ideas": [
+  "Simple prompt cuts clutter across models",
+  "Raw clutter varies by model",
+  "GPT-6 Luna still has some clutter",
+  "Clean graphics are possible"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 4,
+ "summary": "A solid bar chart is cluttered by an unrelated legend, an eyebrow, a repeated chart title, two takeaway cards and a duplicate wordmark.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 9.9,
+  "usd": 0.060786099999999996,
+  "tokens": 25963,
+  "outputTokens": 1015
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Top logo",
+   "reason": "One brand mark.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Keep/Shrink/Remove legend",
+   "reason": "Legend for grader labels, not the chart's bars; irrelevant to reading the result.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow kicker",
+   "reason": "Eyebrow line above headline.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline",
+   "reason": "States the finding in few words.",
+   "ids": [
+    "e9"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Metric subtitle",
+   "reason": "Names the metric and direction; short and useful.",
+   "ids": [
+    "e10"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Chart inner title",
+   "reason": "Restates the metric and headline; the chart title is already given.",
+   "ids": [
+    "e12"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Main bar chart",
+   "reason": "Labelled bars with values per model and prompt.",
+   "ids": [
+    "e11",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45",
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50",
+    "e51",
+    "e52"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Clean is possible card",
+   "reason": "Restates that the simple prompt gives 0% in the chart.",
+   "ids": [
+    "e53",
+    "e55",
+    "e57",
+    "e59",
+    "e60"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "repetition",
+   "name": "One exception card",
+   "reason": "Restates Luna's 6% already in the chart.",
+   "ids": [
+    "e54",
+    "e56",
+    "e58",
+    "e61",
+    "e62",
+    "e63"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "blue",
+   "type": "core",
+   "name": "Footer details",
+   "reason": "Small evaluation footnote.",
+   "ids": [
+    "e64",
+    "e65"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer wordmark",
+   "reason": "Second brand mark.",
+   "ids": [
+    "e66"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 78.9,
+   "orange": 0,
+   "red": 21.1,
+   "unlabelled": 0,
+   "paintedOfCanvas": 26.4
+  },
+  "clutterShare": 37,
+  "areaShare": 21.1,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 96,
+   "over": 71,
+   "wordShare": 37,
+   "scoreFloor": 5
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "repetition": 3
+  },
+  "coverage": 100,
+  "words": 114,
+  "textElements": 33
+ }
+}

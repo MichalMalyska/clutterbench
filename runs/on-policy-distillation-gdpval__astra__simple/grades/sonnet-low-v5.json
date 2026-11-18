@@ -1,0 +1,113 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:19:47.712Z",
+ "main_idea": "On-policy distillation gives about +21% net win-loss margin on GDPval for both Nemotron and Qwen.",
+ "ideas": [
+  "Distillation yields ~+21% win-loss margin on GDPval",
+  "Result holds across two model families"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and complete: one bar chart with a title, metric, values, labels and one logo.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 6.9,
+  "usd": 0.071025,
+  "tokens": 32886,
+  "outputTokens": 517
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title",
+   "reason": "Short title naming method and benchmark.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand logo",
+   "reason": "Single logo, visible.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Metric subtitle",
+   "reason": "Short, names the metric and baseline.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Value labels",
+   "reason": "One value label per bar.",
+   "ids": [
+    "e3",
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars",
+   "reason": "Data marks.",
+   "ids": [
+    "e5",
+    "e6"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Category labels",
+   "reason": "Name the model for each bar.",
+   "ids": [
+    "e7",
+    "e8"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 41.3
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 13,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 2,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 14,
+  "textElements": 6
+ }
+}

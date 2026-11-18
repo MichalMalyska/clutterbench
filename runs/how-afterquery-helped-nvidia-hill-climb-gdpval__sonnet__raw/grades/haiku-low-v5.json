@@ -1,0 +1,161 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:19.251Z",
+ "main_idea": "Light SFT warmup lifts GDPval from 35.3 to 46.7, close to the teacher",
+ "ideas": [
+  "Warmup lifts GDPval score from 35.3 to 46.7",
+  "Warmup nearly matches the office teacher on GDPval",
+  "Warmup also helps BrowseComp and barely moves HLE"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "Clutter: the BrowseComp and HLE panels, a kicker, a takeaway subtitle and a duplicate wordmark; the headline restates values. Missing the metric name for the scores.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "metric definition",
+   "why": "Bar values have no unit or metric name; reader cannot tell what 35.3 measures."
+  }
+ ],
+ "completeness_score": 7,
+ "defects": [],
+ "cost": {
+  "seconds": 12.5,
+  "usd": 0.0038201100000000003,
+  "tokens": 30130,
+  "outputTokens": 2092
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow kicker line",
+   "reason": "Kicker above the headline; names the source model but adds nothing to the finding.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline restating values",
+   "reason": "Restates chart values; could be: \"Light SFT warmup lifts GDPval\".",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Takeaway subtitle",
+   "reason": "Takeaway sentence restating the chart's gap to the teacher.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "GDPval bar chart",
+   "reason": "Main visual: labelled GDPval bars with values, showing the result.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "BrowseComp and HLE panels",
+   "reason": "Other benchmarks add a second point beyond the GDPval result.",
+   "ids": [
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Logo and source footer",
+   "reason": "One brand mark plus a quiet source footnote naming the evaluation.",
+   "ids": [
+    "e34",
+    "e35"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "repetition",
+   "name": "Duplicate wordmark",
+   "reason": "Brand name shown again beside the logo; the logo already marks the brand.",
+   "ids": [
+    "e36"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 21.4,
+   "orange": 35.3,
+   "red": 43.3,
+   "unlabelled": 0,
+   "paintedOfCanvas": 32.3
+  },
+  "clutterShare": 61,
+  "areaShare": 61,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 41,
+   "over": 16,
+   "wordShare": 19.5,
+   "scoreFloor": 2
+  },
+  "ideaCount": 3,
+  "missingCount": 1,
+  "redByType": {
+   "unneeded": 2,
+   "extra_idea": 1,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 58,
+  "textElements": 24
+ }
+}

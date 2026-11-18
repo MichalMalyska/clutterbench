@@ -1,0 +1,178 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:48.473Z",
+ "main_idea": "PivotRL lifts Qwen3.5-9B task success from 11.3% to 17.5% pass@5",
+ "ideas": [
+  "PivotRL raises pass@5 from 11.3% to 17.5%",
+  "Only 50 teacher trajectories were needed",
+  "Smaller model performs better at banking tool-use tasks"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "The before/after chart carries the result clearly, but a slogan headline, explanatory subtitle, decorative bars, a tagline, and a stat-card row about dataset counts add clutter; nothing essential is missing.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Decorative faint bars at right run past the frame edge and get clipped",
+  "Large empty band below the stat cards leaves the bottom unbalanced"
+ ],
+ "cost": {
+  "seconds": 16.5,
+  "usd": 0.00395003,
+  "tokens": 28528,
+  "outputTokens": 2847
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark, kept as is.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and benchmark tag",
+   "reason": "Short context naming the model and benchmark.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Before/after bar chart",
+   "reason": "Main visual: bars, values, labels, axis ticks and metric name.",
+   "ids": [
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan 'A smaller model. Better at the work.' does not state the finding.",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag 'Applied research · Agent training' adds nothing to the result.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph explains the method and restates the chart's point.",
+   "ids": [
+    "e7"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Decorative bar cluster",
+   "reason": "Faint decorative shapes encoding no data; they also run off the canvas edge.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Trend arrow icon",
+   "reason": "Ornamental icon beside the axis title; encodes nothing.",
+   "ids": [
+    "e13"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Takeaway tagline and footer",
+   "reason": "Tagline and footer repeat the brand and restate the point.",
+   "ids": [
+    "e27",
+    "e30"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset count stat cards",
+   "reason": "Side stats on training-set size and pivot counts serve a second point, not the result.",
+   "ids": [
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e28",
+    "e29"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 28.6,
+   "orange": 0,
+   "red": 71.4,
+   "unlabelled": 0,
+   "paintedOfCanvas": 15.7
+  },
+  "clutterShare": 71.4,
+  "areaShare": 71.4,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 56,
+   "over": 31,
+   "wordShare": 27.7,
+   "scoreFloor": 3
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 6,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 66,
+  "textElements": 23
+ }
+}

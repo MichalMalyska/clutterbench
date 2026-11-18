@@ -1,0 +1,213 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:48.913Z",
+ "main_idea": "Training lifts gpt-oss-20b pass rate on Terminal-Bench 2.0 from 3.1% to 17.0%.",
+ "ideas": [
+  "Pass rate rises from 3.1% to 17.0%",
+  "Terminal-Bench 2.0 is the benchmark",
+  "Base model versus AfterQuery trained model",
+  "Pipeline has two training stages"
+ ],
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "summary": "The bar chart carries the result, but the headline is wordy and the stat cards, RLVR card, pipeline strip and repeated footer brand add clutter; nothing essential is missing.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Header logo mark (e1) is very faint, nearly invisible on the light background"
+ ],
+ "cost": {
+  "seconds": 17.1,
+  "usd": 0.00303815,
+  "tokens": 34024,
+  "outputTokens": 3314
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand header",
+   "reason": "Single brand mark (logo and wordmark) identifies the publisher.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Top-right category tag adds no information the reader needs.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow line",
+   "reason": "Kicker above the headline restates the method subtitle and adds nothing.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Two-sentence headline",
+   "reason": "Two clauses say the finding the long way; could be: \"5x uplift on Terminal-Bench 2.0\".",
+   "ids": [
+    "e5"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and metric subtitle",
+   "reason": "Names the model and the measured metric and benchmark.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Pass rate bar chart",
+   "reason": "Main visual: labelled bars, values, chart title and benchmark show the result.",
+   "ids": [
+    "e7",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e15",
+    "e20",
+    "e22",
+    "e23"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "repetition",
+   "name": "5.5x stat card",
+   "reason": "Restates the 3.1% to 17.0% gap the bars already show.",
+   "ids": [
+    "e8",
+    "e9",
+    "e14"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "+10.4 stat card",
+   "reason": "Restates the 3.1 to 17.0 difference already shown by the bars.",
+   "ids": [
+    "e16",
+    "e17",
+    "e18",
+    "e19"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "RLVR increment card",
+   "reason": "Side point about the RLVR stage gain, unrelated to reading the main chart.",
+   "ids": [
+    "e21",
+    "e24",
+    "e25",
+    "e26",
+    "e27"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Two-stage pipeline strip",
+   "reason": "Pipeline diagram is a second point about method, not the result.",
+   "ids": [
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footnote",
+   "reason": "Quiet footnote giving benchmark, task count and averaging method.",
+   "ids": [
+    "e44",
+    "e46"
+   ]
+  },
+  {
+   "rid": "r11",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer wordmark",
+   "reason": "Second brand mark repeats the header logo and wordmark.",
+   "ids": [
+    "e45"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 43.1,
+   "orange": 25.9,
+   "red": 31,
+   "unlabelled": 0,
+   "paintedOfCanvas": 30
+  },
+  "clutterShare": 44,
+  "areaShare": 44,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 90,
+   "over": 65,
+   "wordShare": 36.1,
+   "scoreFloor": 5
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "repetition": 3,
+   "extra_idea": 2
+  },
+  "coverage": 100,
+  "words": 105,
+  "textElements": 32
+ }
+}

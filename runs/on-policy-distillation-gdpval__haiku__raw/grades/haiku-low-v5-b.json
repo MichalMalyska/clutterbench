@@ -1,0 +1,134 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:08.275Z",
+ "main_idea": "Distillation lifts GDPval net win-loss margin by about 21% on two model families",
+ "ideas": [
+  "Nemotron student gains +20.9% net win-loss margin",
+  "Qwen student reproduces the gain at +21.4%",
+  "Mean rubric points rise on both models",
+  "Win/loss split on the 220 GDPval tasks",
+  "Method: student learns from teacher on its own rollouts"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "The two-model result rows are the right main visual, but the slogan headline, method paragraph, category tag and the extra Nemotron win/loss bar block should go.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 12.6,
+  "usd": 0.00226387,
+  "tokens": 37048,
+  "outputTokens": 1695
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Two-model result rows",
+   "reason": "Headline margins and rubric gains per model, with labels and model names",
+   "ids": [
+    "e0",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that names the method and field, not the finding; the stats carry the point",
+   "ids": [
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Method explainer paragraph",
+   "reason": "Explains the method in prose; the chart does not need it for the main result",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Category tag above the chart, adds nothing the reader needs",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Nemotron win/loss bar block",
+   "reason": "Second single-model chart with win counts and training split; serves a side point, not the two-family result",
+   "ids": [
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 30.8,
+   "orange": 0,
+   "red": 69.2,
+   "unlabelled": 0,
+   "paintedOfCanvas": 39.7
+  },
+  "clutterShare": 69.2,
+  "areaShare": 69.2,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 91,
+   "over": 66,
+   "wordShare": 36.3,
+   "scoreFloor": 5
+  },
+  "ideaCount": 5,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 102,
+  "textElements": 25
+ }
+}

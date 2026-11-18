@@ -1,0 +1,187 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.568Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 1,
+  "tiebreak": true,
+  "scores": [
+   5,
+   4,
+   5
+  ]
+ },
+ "main_idea": "GRPO training raised Qwen3.8-27B's DeepSWE pass@1 from 27.8% to 39.1%.",
+ "ideas": [
+  "GRPO lifts DeepSWE pass@1 by 11.3 points",
+  "Training data is expert-authored and realistic",
+  "AfterQuery brand and dataset credentials"
+ ],
+ "summary": "A clear bar chart is cluttered by a slogan headline, eyebrow tag, dataset stats row and footer URL; nothing essential is missing.",
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "completeness_score": 10,
+ "missing": [],
+ "defects": [
+  "The 39.1% label is partly overlapped by the callout box edge."
+ ],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag with no information about the result.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Post title subtitle",
+   "reason": "Names model, benchmark and method concisely.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and metric",
+   "reason": "Says what is measured: DeepSWE pass@1, average of three.",
+   "ids": [
+    "e4",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "repetition",
+   "name": "+11.3 points callout",
+   "reason": "Stat card restating the 27.8 to 39.1 difference the bars already show.",
+   "ids": [
+    "e5",
+    "e6",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and values",
+   "reason": "The main data marks with value labels and gridlines.",
+   "ids": [
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "blue",
+   "type": "core",
+   "name": "Bar labels",
+   "reason": "Category labels identifying the two bars.",
+   "ids": [
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset stats row",
+   "reason": "Training dataset stats and blurb serve a second point beyond the result.",
+   "ids": [
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "blue",
+   "type": "core",
+   "name": "Eval footnote",
+   "reason": "Quiet evaluation details.",
+   "ids": [
+    "e27"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer URL",
+   "reason": "Second brand mention, since the logo is already shown.",
+   "ids": [
+    "e28"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 55.8,
+   "orange": 0,
+   "red": 44.2,
+   "unlabelled": 0,
+   "paintedOfCanvas": 35
+  },
+  "clutterShare": 44.2,
+  "areaShare": 44.2,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 62,
+   "over": 37,
+   "wordShare": 29.8,
+   "scoreFloor": 3
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "repetition": 4,
+   "extra_idea": 9
+  },
+  "coverage": 100,
+  "words": 66,
+  "textElements": 21
+ }
+}

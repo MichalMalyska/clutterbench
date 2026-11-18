@@ -1,0 +1,149 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.546Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 3,
+  "tiebreak": true,
+  "scores": [
+   2,
+   2,
+   2
+  ]
+ },
+ "main_idea": "Two-stage training (SFT then RLVR) lifted gpt-oss-20b Terminal-Bench 2.0 pass rate from 3.1% to 17.0%.",
+ "ideas": [
+  "Pass rate rises over 5x with SFT then RLVR",
+  "Each training stage adds gains",
+  "No eval tasks used in training"
+ ],
+ "summary": "Mostly clean single chart; the headline is padded, and the sublabels and footer URL are extras.",
+ "clutter_score": 2,
+ "grader_clutter_score": 2,
+ "completeness_score": 9,
+ "missing": [],
+ "defects": [
+  "17.0% label sits dark on gold bar; fine but tight",
+  "Terminus 2 sublabel is only on the base row"
+ ],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark and model tag",
+   "reason": "Short context naming benchmark and model.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "Padded and large; could be: \"Pass rate up 5x on Terminal-Bench 2.0\"",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Bar chart",
+   "reason": "Bars, row labels and one value per bar.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e7",
+    "e8",
+    "e9",
+    "e11",
+    "e12",
+    "e13"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Base model bar",
+   "reason": "Bar, value, row label and agent context for the baseline.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Sublabels",
+   "reason": "Terminus 2 and Stage 1/2 repeat what the row labels say.",
+   "ids": [
+    "e10",
+    "e14"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Eval footnote",
+   "reason": "Quiet footnote with evaluation detail.",
+   "ids": [
+    "e15",
+    "e16"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer URL",
+   "reason": "Second brand mark when the logo is already shown.",
+   "ids": [
+    "e17"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 53,
+   "orange": 44.8,
+   "red": 2.2,
+   "unlabelled": 0,
+   "paintedOfCanvas": 25.8
+  },
+  "clutterShare": 24.6,
+  "areaShare": 24.6,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 29,
+   "over": 4,
+   "wordShare": 6.9,
+   "scoreFloor": 1
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 37,
+  "textElements": 13
+ }
+}

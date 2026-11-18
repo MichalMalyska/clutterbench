@@ -1,0 +1,187 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:19:22.749Z",
+ "main_idea": "Qwen3.5-9B improved from 11.3% to 17.5% pass@5 on τ³-Banking.",
+ "ideas": [
+  "Pass@5 rose from 11.3% to 17.5%",
+  "Method: distill teacher, then PivotRL",
+  "Key training and eval numbers",
+  "No general capability change"
+ ],
+ "clutter_score": 7,
+ "grader_clutter_score": 7,
+ "summary": "The 11.3% to 17.5% result is clear, but the pipeline cards, stats row, pill, subtitle and footer crowd it, and the headline is not the finding.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Stats row top border touches the bottom of pipeline cards"
+ ],
+ "cost": {
+  "seconds": 9.9,
+  "usd": 0.0600173,
+  "tokens": 25847,
+  "outputTokens": 946
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark with wordmark.",
+   "ids": [
+    "e0",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Research date pill",
+   "reason": "Badge/tag adds nothing to the result.",
+   "ids": [
+    "e1",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "Sentence-style headline, not the finding; could be: \"11.3% → 17.5% on τ³-Banking\"",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle",
+   "reason": "Tagline restating the method, not the result.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Result comparison",
+   "reason": "Core before/after values with pass@5 labels and bars.",
+   "ids": [
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Wordy bar label",
+   "reason": "Longer than needed; could be \"After training\".",
+   "ids": [
+    "e13"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method pipeline cards",
+   "reason": "Pipeline of stages is a second point beside the result.",
+   "ids": [
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Stats row",
+   "reason": "Dataset and hyperparameter counts are unrelated to reading the result.",
+   "ids": [
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer",
+   "reason": "Second brand mention, tagline and decorative dot.",
+   "ids": [
+    "e45",
+    "e46",
+    "e47"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 27.1,
+   "orange": 31.2,
+   "red": 41.6,
+   "unlabelled": 0,
+   "paintedOfCanvas": 35.7
+  },
+  "clutterShare": 57.2,
+  "areaShare": 57.2,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 107,
+   "over": 82,
+   "wordShare": 38.3,
+   "scoreFloor": 6
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "extra_idea": 2,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 125,
+  "textElements": 32
+ }
+}

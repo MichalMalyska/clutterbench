@@ -1,0 +1,202 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:58.953Z",
+ "main_idea": "A simple prompt cuts graphic clutter to almost nothing for most models.",
+ "ideas": [
+  "Simple prompts cut clutter to almost nothing",
+  "Raw prompts leave high clutter across models",
+  "GPT-6 Luna keeps some clutter under simple prompt"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 4,
+ "summary": "The chart and headline are clear, but the eyebrow, colour legend, takeaway cards and repeated footer wordmark are clutter; nothing needed is missing.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 14.8,
+  "usd": 0.0024825,
+  "tokens": 28925,
+  "outputTokens": 2312
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "ClutterBench logo",
+   "reason": "One brand mark, kept as the single logo.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Finding headline",
+   "reason": "States the finding in one short headline.",
+   "ids": [
+    "e9"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Metric subtitle",
+   "reason": "Names the measured quantity and direction, short and needed.",
+   "ids": [
+    "e10"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Main results chart",
+   "reason": "The bars, labels, values, and chart title carry the result.",
+   "ids": [
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45",
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50",
+    "e51",
+    "e52"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footnote",
+   "reason": "Quiet footnote giving the run size and posts.",
+   "ids": [
+    "e64",
+    "e65"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow label",
+   "reason": "Kicker line above the headline adds nothing the reader needs.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Colour legend",
+   "reason": "Keep/Shrink/Remove key explains grader colours, not the bars shown.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer wordmark",
+   "reason": "Brand already shown in the header logo.",
+   "ids": [
+    "e66"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Takeaway cards",
+   "reason": "Paragraph cards restate the chart's 3 of 4 and 6% values and add a second point.",
+   "ids": [
+    "e53",
+    "e54",
+    "e55",
+    "e56",
+    "e57",
+    "e58",
+    "e59",
+    "e60",
+    "e61",
+    "e62",
+    "e63"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 80.4,
+   "orange": 0,
+   "red": 19.6,
+   "unlabelled": 0,
+   "paintedOfCanvas": 26.4
+  },
+  "clutterShare": 37,
+  "areaShare": 19.6,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 96,
+   "over": 71,
+   "wordShare": 37,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 114,
+  "textElements": 33
+ }
+}

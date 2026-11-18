@@ -1,0 +1,174 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:13.357Z",
+ "main_idea": "On-policy distillation gives about +21% net win-loss margin on GDPval for two model families",
+ "ideas": [
+  "On-policy distillation lifts GDPval net win-loss margin",
+  "Nemotron Nano reaches +20.9% vs base",
+  "Qwen3.5-9B reaches +21.4% vs base",
+  "Training uses AfterQuery data, not public GDPval examples",
+  "Student learns from its own rollouts scored by a frozen teacher"
+ ],
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "summary": "The two win-loss margins are clear, but a slogan headline, a subtitle, repeated rubric callouts and a large method pipeline clutter it; nothing essential is missing.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 14.6,
+  "usd": 0.0046995000000000006,
+  "tokens": 37719,
+  "outputTokens": 2313
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "One brand mark, kept.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Eyebrow-style category tag that encodes nothing the reader needs.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding; the headline should name the metric or result.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Subtitle restates what the stat cards already show.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Net win-loss margin stats",
+   "reason": "Model names, big margins and metric label carry the main result.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "repetition",
+   "name": "Mean rubric score callouts",
+   "reason": "Rubric deltas are secondary figures, not the post's main result; repeated in their own row.",
+   "ids": [
+    "e13",
+    "e14",
+    "e15",
+    "e16"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method pipeline diagram",
+   "reason": "Shows the training method, a second point beside the results; takes large canvas space.",
+   "ids": [
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "blue",
+   "type": "core",
+   "name": "Dataset and benchmark footer",
+   "reason": "Quiet footnote on training data and the GDPval benchmark named.",
+   "ids": [
+    "e32",
+    "e33",
+    "e34"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "repetition",
+   "name": "Repeated brand link",
+   "reason": "Second brand mark after the logo already at the top.",
+   "ids": [
+    "e35"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 42,
+   "orange": 0,
+   "red": 58,
+   "unlabelled": 0,
+   "paintedOfCanvas": 35.5
+  },
+  "clutterShare": 58,
+  "areaShare": 58,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 101,
+   "over": 76,
+   "wordShare": 37.6,
+   "scoreFloor": 6
+  },
+  "ideaCount": 5,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "repetition": 2,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 104,
+  "textElements": 25
+ }
+}

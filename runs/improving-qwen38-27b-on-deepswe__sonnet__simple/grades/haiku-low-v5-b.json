@@ -1,0 +1,86 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:57.386Z",
+ "main_idea": "GRPO training lifts Qwen3.8-27B's DeepSWE pass@1 from 27.8% to 39.1%.",
+ "ideas": [
+  "Base model scores 27.8% on DeepSWE pass@1",
+  "After GRPO training the model scores 39.1%",
+  "Training raised DeepSWE pass@1 for Qwen3.8-27B"
+ ],
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "summary": "Clean and nearly complete: one bar chart with the benchmark, metric, labelled bars and a logo; only the evaluation footnote is absent, which is acceptable.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 7.8,
+  "usd": 0.0017893400000000002,
+  "tokens": 25175,
+  "outputTokens": 965
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and logo",
+   "reason": "Bare metric and model name in the title, plus one brand mark.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and value labels",
+   "reason": "The data marks, each with one value label showing the result.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Category labels",
+   "reason": "Short labels that say which bar is base and which is trained.",
+   "ids": [
+    "e6",
+    "e7"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 40.1
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 6,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 8,
+  "textElements": 5
+ }
+}

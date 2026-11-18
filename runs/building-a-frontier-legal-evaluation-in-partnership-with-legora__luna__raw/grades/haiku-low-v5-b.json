@@ -1,0 +1,216 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:44.123Z",
+ "main_idea": "BAR-informed harness changes raised Legora's output quality by 5%.",
+ "ideas": [
+  "BAR is a frontier legal benchmark for agents",
+  "BAR scores agents on end-to-end legal work",
+  "BAR-informed harness changes improved output quality 5%",
+  "Benchmark built with Legora and AfterQuery"
+ ],
+ "clutter_score": 8,
+ "grader_clutter_score": 8,
+ "summary": "The +5% result is buried under a method pipeline, dataset stats and slogans; the graphic needs cutting down to the result banner and brand mark.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Header logo mark is very small and hard to read at this size"
+ ],
+ "cost": {
+  "seconds": 16.8,
+  "usd": 0.0027728699999999998,
+  "tokens": 28853,
+  "outputTokens": 2870
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery brand mark",
+   "reason": "Single brand mark at the top; it identifies the source.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% impact result",
+   "reason": "The post's main result, with its metric and context, stated plainly.",
+   "ids": [
+    "e51",
+    "e52",
+    "e53",
+    "e54",
+    "e55"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Header tag",
+   "reason": "Category tag repeating the partnership already shown elsewhere; adds nothing.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow kicker",
+   "reason": "Kicker line above the headline; names the benchmark but adds no finding.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Question headline",
+   "reason": "Slogan-style question that does not state the finding.",
+   "ids": [
+    "e5"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph restating what the benchmark is; the chart does not need it.",
+   "ids": [
+    "e9"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "5,161 cases stat card",
+   "reason": "Dataset-size stat serves a second point, not the +5% result.",
+   "ids": [
+    "e6",
+    "e7",
+    "e8",
+    "e10"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset counts row",
+   "reason": "Practice areas, documents and synthetic case counts are a separate point.",
+   "ids": [
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Three-step pipeline diagram",
+   "reason": "Shows the method, not the result; most of the canvas and a second idea.",
+   "ids": [
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45",
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer tagline",
+   "reason": "Slogan tagline; tells the reader nothing about the result.",
+   "ids": [
+    "e56"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer wordmark",
+   "reason": "Brand shown again in the footer; the header logo already covers it.",
+   "ids": [
+    "e57",
+    "e58"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 18,
+   "orange": 0,
+   "red": 82,
+   "unlabelled": 0,
+   "paintedOfCanvas": 24.3
+  },
+  "clutterShare": 82,
+  "areaShare": 82,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 118,
+   "over": 93,
+   "wordShare": 39.4,
+   "scoreFloor": 7
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 5,
+   "extra_idea": 3,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 126,
+  "textElements": 34
+ }
+}

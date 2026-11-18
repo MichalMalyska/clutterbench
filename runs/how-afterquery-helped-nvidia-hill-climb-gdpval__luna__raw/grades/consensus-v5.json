@@ -1,0 +1,198 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.530Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 3,
+  "tiebreak": true,
+  "scores": [
+   6,
+   5,
+   5
+  ]
+ },
+ "main_idea": "AfterQuery warmup lifts Nemotron 3 Ultra GDPval score from 35.3 to 46.7, near teacher.",
+ "ideas": [
+  "Warmup raises GDPval score substantially",
+  "Warmed-up model nears specialized teacher",
+  "Warmup gain is +11.4 points"
+ ],
+ "summary": "A clear bar chart is surrounded by a slogan headline, eyebrow, tag, subtitle, legend, stat callout, and footer brand and tagline that should go.",
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "completeness_score": 9,
+ "missing": [],
+ "defects": [],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark; header rule is just its container.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Category tag tells the reader nothing needed.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow line",
+   "reason": "Eyebrow above headline; model name is not needed here.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle sentence",
+   "reason": "Subtitle restates what the chart shows.",
+   "ids": [
+    "e5"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and card",
+   "reason": "Names benchmark, metric and context concisely.",
+   "ids": [
+    "e6",
+    "e7",
+    "e8",
+    "e9"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Bar chart",
+   "reason": "Bars, values, axis and category labels carry the result.",
+   "ids": [
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "blue",
+   "type": "core",
+   "name": "Score bar chart",
+   "reason": "Bars, values, axis, legend, chart title and metric name; all needed to read the result",
+   "ids": [
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "repetition",
+   "name": "Gain callout",
+   "reason": "Restates the difference the bars already show.",
+   "ids": [
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer wordmark",
+   "reason": "Second brand mark; logo already at top.",
+   "ids": [
+    "e41"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Tagline",
+   "reason": "Tagline is unneeded.",
+   "ids": [
+    "e42"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 52.3,
+   "orange": 0,
+   "red": 47.7,
+   "unlabelled": 0,
+   "paintedOfCanvas": 22.4
+  },
+  "clutterShare": 47.7,
+  "areaShare": 47.7,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 72,
+   "over": 47,
+   "wordShare": 32.6,
+   "scoreFloor": 4
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 5,
+   "repetition": 6
+  },
+  "coverage": 100,
+  "words": 84,
+  "textElements": 29
+ }
+}

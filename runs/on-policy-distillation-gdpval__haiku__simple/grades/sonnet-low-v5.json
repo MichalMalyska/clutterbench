@@ -1,0 +1,89 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:19:51.220Z",
+ "main_idea": "Distilled model beats base on GDPval: 123 wins, 20 ties, 77 losses, +20.9% net margin.",
+ "ideas": [
+  "Distilled model wins more GDPval task pairs than it loses"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and complete: a single win/tie/loss bar with a finding headline and one logo.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Logo is visible in screenshot but absent from element list; no defect"
+ ],
+ "cost": {
+  "seconds": 6.5,
+  "usd": 0.0702372,
+  "tokens": 32811,
+  "outputTokens": 437
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Win/tie/loss bar",
+   "reason": "Proportional stacked bar with value and category labels shows the result.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline",
+   "reason": "States the finding, the benchmark and the baseline concisely.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Background",
+   "reason": "Plain canvas background.",
+   "ids": [
+    "e0"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 100
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 11,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 1,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 15,
+  "textElements": 7
+ }
+}

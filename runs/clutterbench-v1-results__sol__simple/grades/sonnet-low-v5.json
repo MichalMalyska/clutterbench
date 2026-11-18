@@ -1,0 +1,130 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:51.543Z",
+ "main_idea": "A simple prompt cuts every model's clutter score from 29-61% to 0-6%.",
+ "ideas": [
+  "Simple prompt cuts clutter for all models"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and complete: a single slope chart with a short headline, one logo and value labels.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 7.4,
+  "usd": 0.0532748,
+  "tokens": 23951,
+  "outputTokens": 589
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand wordmark",
+   "reason": "One logo wordmark, quiet and useful.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline",
+   "reason": "Short headline that states the finding.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Column and metric labels",
+   "reason": "Name the prompts and the metric being measured.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Axes and slope lines",
+   "reason": "Slope lines and axes carry the data.",
+   "ids": [
+    "e6",
+    "e10",
+    "e14",
+    "e18",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Model rows raw values",
+   "reason": "Model labels, raw-prompt points and value labels.",
+   "ids": [
+    "e8",
+    "e12",
+    "e16",
+    "e20",
+    "e9",
+    "e13",
+    "e17",
+    "e21",
+    "e7",
+    "e11",
+    "e15",
+    "e19"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Simple prompt values",
+   "reason": "Endpoint dots and value labels for the simple prompt.",
+   "ids": [
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34.1
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 22,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 1,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 30,
+  "textElements": 16
+ }
+}

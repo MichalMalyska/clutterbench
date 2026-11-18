@@ -1,0 +1,204 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:14:42.743Z",
+ "main_idea": "Harness changes informed by BAR raised output quality 5% in one month",
+ "ideas": [
+  "BAR is a legal benchmark for agents",
+  "BAR-informed harness changes raised output quality 5%",
+  "Benchmark built with Legora, from realistic legal work"
+ ],
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "summary": "The +5% result is clear, but the dataset stats row, process pipeline, slogan headline, and footer tagline clutter it; nothing essential is missing.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 13.9,
+  "usd": 0.0035150299999999997,
+  "tokens": 27510,
+  "outputTokens": 2025
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "One brand mark, kept as the single logo.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Partnership tag",
+   "reason": "Partner line in the header adds context the chart does not need.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow line",
+   "reason": "Category kicker above the headline tells the reader nothing new.",
+   "ids": [
+    "e23"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding; the result is the +5%.",
+   "ids": [
+    "e24"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark name line",
+   "reason": "Names the benchmark and what it evaluates.",
+   "ids": [
+    "e25"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset size stats row",
+   "reason": "Dataset counts serve a second point, not the +5% result.",
+   "ids": [
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Process pipeline",
+   "reason": "Method steps illustrate the process rather than the main result.",
+   "ids": [
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% result callout",
+   "reason": "Carries the main result with a short metric label.",
+   "ids": [
+    "e44",
+    "e45",
+    "e46"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Callout explanation",
+   "reason": "Sentence restates the callout; could be shorter, e.g. \"BAR-informed harness changes, same production models\".",
+   "ids": [
+    "e47"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Tagline footer",
+   "reason": "Slogan tagline that explains nothing the chart shows.",
+   "ids": [
+    "e48"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "repetition",
+   "name": "Website URL",
+   "reason": "Brand already shown by the logo; URL repeats it.",
+   "ids": [
+    "e49"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 26.6,
+   "orange": 6.6,
+   "red": 66.8,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34.8
+  },
+  "clutterShare": 70.1,
+  "areaShare": 70.1,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 94,
+   "over": 69,
+   "wordShare": 36.7,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 4,
+   "extra_idea": 2,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 98,
+  "textElements": 22
+ }
+}

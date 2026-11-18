@@ -1,0 +1,190 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:16.870Z",
+ "main_idea": "Distilled Nemotron and Qwen students beat their base models: +20.9% and +21.4% net win-loss margin",
+ "ideas": [
+  "Net win-loss margin of distilled students over base models",
+  "Gain reproduces across two model families",
+  "Nemotron wins, ties and losses on 220 GDPval tasks",
+  "Distillation from a frozen teacher on GDPval"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "Clean stat-and-bar layout, but the slogan headline, eyebrow, subtitle and rubric-point stats clutter it; the margins and win-loss bar carry the point.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Bottom divider at y~1179 is nearly at canvas edge, looks like a stray rule",
+  "Net win-loss margin metric is labelled but never defined for a non-reader"
+ ],
+ "cost": {
+  "seconds": 16.1,
+  "usd": 0.00485874,
+  "tokens": 37997,
+  "outputTokens": 2642
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark, kept as the one logo.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Nemotron net margin result",
+   "reason": "Main result value, model, teacher and metric label.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7",
+    "e9",
+    "e10",
+    "e11",
+    "e12"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Qwen net margin result",
+   "reason": "Second-family result shows the claimed reproduction.",
+   "ids": [
+    "e14",
+    "e15",
+    "e17",
+    "e18",
+    "e19",
+    "e20"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Win-loss bar chart",
+   "reason": "Titled bar chart with labelled wins, ties, losses and win rate.",
+   "ids": [
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Sign test footnote",
+   "reason": "Quiet evaluation detail supporting the margin's significance.",
+   "ids": [
+    "e30"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag above the headline tells the reader nothing needed.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding; the result is the margin.",
+   "ids": [
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph explains method and restates what the chart shows.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Rubric point stats",
+   "reason": "Second metric beside the margin; serves a different point than the main result.",
+   "ids": [
+    "e8",
+    "e13",
+    "e16",
+    "e21"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Training split note",
+   "reason": "Dataset size detail, not needed to read the main result.",
+   "ids": [
+    "e31"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Bottom divider rule",
+   "reason": "Decorative rule with no data or text.",
+   "ids": [
+    "e32"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 43.1,
+   "orange": 0,
+   "red": 56.9,
+   "unlabelled": 0,
+   "paintedOfCanvas": 39.7
+  },
+  "clutterShare": 56.9,
+  "areaShare": 56.9,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 91,
+   "over": 66,
+   "wordShare": 36.3,
+   "scoreFloor": 5
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 4,
+   "extra_idea": 2
+  },
+  "coverage": 100,
+  "words": 102,
+  "textElements": 25
+ }
+}

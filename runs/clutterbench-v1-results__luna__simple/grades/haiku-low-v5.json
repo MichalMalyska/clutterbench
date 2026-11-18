@@ -1,0 +1,157 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:02.355Z",
+ "main_idea": "A simple prompt cuts clutter from 29-61% to near 0%",
+ "ideas": [
+  "A simple prompt cuts clutter",
+  "Raw prompts leave 29-61% clutter across models",
+  "Simple prompts drop every model to 0-6%"
+ ],
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "summary": "Clean and short apart from one missing link: the bars are not aligned to their model rows and the axis scales conflict, so the reader cannot tell which result belongs to which model.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "bar-to-model pairing",
+   "why": "Bars sit between the model rows, so a reader cannot tell which bar belongs to which model."
+  }
+ ],
+ "completeness_score": 6,
+ "defects": [
+  "Bars are misaligned with their model row labels",
+  "Bar lengths do not match their value labels (61% bar near 55)",
+  "Two y-axis scales (percent ticks and 0-80 numbers) conflict",
+  "Second x-axis scale 0-80 has no unit",
+  "Grid lines and bars overlap in Sonnet and Haiku rows"
+ ],
+ "cost": {
+  "seconds": 14.8,
+  "usd": 0.00356593,
+  "tokens": 27712,
+  "outputTokens": 2098
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Logo",
+   "reason": "One brand mark, kept as is.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Finding headline",
+   "reason": "Short headline that states the finding in five words.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Prompt legend",
+   "reason": "Column headers that name the two conditions being compared.",
+   "ids": [
+    "e3",
+    "e4"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars, values and axes",
+   "reason": "The data marks, value labels and axis ticks needed to read the chart.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e24",
+    "e25",
+    "e26",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Model names",
+   "reason": "Row labels identifying each model, kept as is.",
+   "ids": [
+    "e9",
+    "e16",
+    "e23",
+    "e27"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Footer note",
+   "reason": "Quiet footnote giving the metric, direction and averaging method.",
+   "ids": [
+    "e36",
+    "e37",
+    "e38",
+    "e39"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 28.1
+  },
+  "clutterShare": 8.3,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 30,
+   "over": 5,
+   "wordShare": 8.3,
+   "scoreFloor": 1
+  },
+  "ideaCount": 3,
+  "missingCount": 1,
+  "redByType": {},
+  "coverage": 100,
+  "words": 51,
+  "textElements": 30
+ }
+}

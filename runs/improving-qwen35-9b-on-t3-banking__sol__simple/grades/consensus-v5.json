@@ -1,0 +1,78 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.557Z",
+ "consensus": {
+  "haikuAgreed": true,
+  "elementsChanged": 0,
+  "tiebreak": false,
+  "scores": [
+   0
+  ]
+ },
+ "main_idea": "Hybrid OPD plus PivotRL lifts Qwen3.5-9B pass@5 on τ³-Banking from 11.3% to 17.5%.",
+ "ideas": [
+  "Qwen3.5-9B pass@5 on τ³-Banking rises after training",
+  "Base scores 11.3%",
+  "Hybrid OPD + PivotRL scores 17.5%"
+ ],
+ "summary": "Clean and complete: one before-after bar chart naming the model, benchmark, metric and values, with no extra elements.",
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "completeness_score": 10,
+ "missing": [],
+ "defects": [],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and logo",
+   "reason": "Title names the model and benchmark; one logo as the brand mark.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Before-after bar chart",
+   "reason": "Bars, values, category labels and the pass@5 metric name carry the result.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 31.2
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 10,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 11,
+  "textElements": 6
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.510Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 0,
+  "tiebreak": true,
+  "scores": [
+   1,
+   8,
+   7
+  ]
+ },
+ "main_idea": "BAR is a large legal benchmark: 5,161 cases, 28 practice areas, 11,075 documents.",
+ "ideas": [
+  "BAR benchmark scale: cases, documents, practice areas"
+ ],
+ "summary": "Clean and complete: three big stats with labels, a benchmark tag and one logo, with nothing to remove.",
+ "clutter_score": 7,
+ "grader_clutter_score": 7,
+ "completeness_score": 3,
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "main result: 5% quality gain",
+   "why": "The post's headline finding about harness changes and output quality is absent."
+  },
+  {
+   "mid": "m1",
+   "what": "headline stating the finding",
+   "why": "No headline says what the graphic is claiming, so the reader cannot tell the point."
+  }
+ ],
+ "defects": [
+  "No rendering defects visible; logo and text display correctly."
+ ],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark, visible.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark name tag",
+   "reason": "Short context naming the benchmark.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset size stats",
+   "reason": "Dataset counts serve a second point, not the 5% result the post reports.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 1.6,
+   "orange": 0,
+   "red": 98.4,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34
+  },
+  "clutterShare": 98.4,
+  "areaShare": 98.4,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 7,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 1,
+  "missingCount": 2,
+  "redByType": {
+   "extra_idea": 9
+  },
+  "coverage": 100,
+  "words": 10,
+  "textElements": 7
+ }
+}

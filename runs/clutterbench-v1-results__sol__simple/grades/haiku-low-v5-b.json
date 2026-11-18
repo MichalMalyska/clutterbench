@@ -1,0 +1,114 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:59.005Z",
+ "main_idea": "A simple prompt cuts clutter scores from 29-61% to 0-6%.",
+ "ideas": [
+  "Simple prompt cuts clutter for every model",
+  "Raw prompt clutter ranges 29-61% across models",
+  "Simple prompt leaves 0-6% clutter"
+ ],
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "summary": "Clean and nearly complete: one slope chart with a finding headline and logo; the benchmark name is only implied by the logo, so the reader must infer what is measured.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 9.3,
+  "usd": 0.0019679800000000002,
+  "tokens": 26377,
+  "outputTokens": 1300
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "ClutterBench logo",
+   "reason": "Single brand mark, short and needed for identification.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Finding headline",
+   "reason": "States the finding in one short line.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Condition and metric labels",
+   "reason": "Column headers name the two conditions and the metric, which the reader needs to read the chart.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Slope chart with labels",
+   "reason": "Marks, row labels and value labels carry the data, each shown once.",
+   "ids": [
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34.1
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 22,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 30,
+  "textElements": 16
+ }
+}

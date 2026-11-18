@@ -1,0 +1,141 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.570Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 0,
+  "tiebreak": true,
+  "scores": [
+   4,
+   4,
+   3
+  ]
+ },
+ "main_idea": "GRPO raised Qwen3.8-27B's DeepSWE pass@1 from 27.8% to 39.1%.",
+ "ideas": [
+  "GRPO lifts DeepSWE pass@1 by 11.3 points",
+  "Training setup: 500 tasks, 422 repos, 8 attempts",
+  "Reward rose from 0.570 to 0.856"
+ ],
+ "summary": "A clear before/after main visual is cluttered by a training-stats footer and a date tag, and the headline is padded.",
+ "clutter_score": 4,
+ "grader_clutter_score": 4,
+ "completeness_score": 9,
+ "missing": [],
+ "defects": [],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Logo",
+   "reason": "Single brand mark, visible.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Research date tag",
+   "reason": "Category and date tag adds nothing to the result.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Main before-after result",
+   "reason": "Title, logo, benchmark line, both values, change annotation and labels carry the result.",
+   "ids": [
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Metric subtitle",
+   "reason": "Names the benchmark, metric and setup briefly.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Before/after cards",
+   "reason": "Main visual: two values with labels.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e11",
+    "e12"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Delta annotation",
+   "reason": "Small annotation marking the change between the two bars.",
+   "ids": [
+    "e9",
+    "e10"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Training stats row",
+   "reason": "Dataset and training stats serve a second point beyond the result.",
+   "ids": [
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 85.8,
+   "orange": 0,
+   "red": 14.2,
+   "unlabelled": 0,
+   "paintedOfCanvas": 39.1
+  },
+  "clutterShare": 14.2,
+  "areaShare": 14.2,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 34,
+   "over": 9,
+   "wordShare": 13.2,
+   "scoreFloor": 1
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 1,
+   "extra_idea": 9
+  },
+  "coverage": 100,
+  "words": 43,
+  "textElements": 18
+ }
+}

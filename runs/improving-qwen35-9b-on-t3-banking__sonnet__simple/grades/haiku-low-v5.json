@@ -1,0 +1,76 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:50.769Z",
+ "main_idea": "PivotRL and distillation lift Qwen3.5-9B from 11.3% to 17.5% pass@5 on τ³-Banking",
+ "ideas": [
+  "Pass@5 on τ³-Banking rises from 11.3% to 17.5%",
+  "The gain comes from adding OPD and PivotRL"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and complete: one bar chart with a metric title, labelled values and a logo; the evaluation footnote (97 tasks, five attempts) is absent but optional.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 8,
+  "usd": 0.0027944000000000003,
+  "tokens": 25381,
+  "outputTokens": 768
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Main bar chart",
+   "reason": "Chart title names the metric; bars, values and category labels are all needed to read the result.",
+   "ids": [
+    "e0",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand mark",
+   "reason": "One small logo mark, which is allowed.",
+   "ids": [
+    "e1"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 31.8
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 7,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 2,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 9,
+  "textElements": 5
+ }
+}

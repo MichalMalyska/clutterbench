@@ -1,0 +1,167 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:49.971Z",
+ "main_idea": "Training lifts Qwen3.5-9B from 11.3% to 17.5% pass@5 on τ³-Banking",
+ "ideas": [
+  "Qwen3.5-9B pass rate rises after training",
+  "Base 11.3% versus after training 17.5%",
+  "Measured as pass@5 on τ³-Banking",
+  "Training recipe is distillation then PivotRL"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "The before-and-after bar chart is clear and complete, but the method recipe block, subtitle, eyebrow tags and repeated footer brand add clutter that should go.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 14,
+  "usd": 0.00346545,
+  "tokens": 27583,
+  "outputTokens": 1882
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo header",
+   "reason": "Brand mark, the one logo allowed.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline naming model and benchmark",
+   "reason": "Names the model and benchmark in a short two-line headline.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Before and after bar chart",
+   "reason": "Bars, labels, values, chart title and metric carry the main result.",
+   "ids": [
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footnote",
+   "reason": "Quiet footnote giving tasks and averaging, as expected.",
+   "ids": [
+    "e27",
+    "e28"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Applied research tag",
+   "reason": "Category tag that adds nothing to the result.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Customer service eyebrow",
+   "reason": "Kicker line above the headline; restates the topic.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Method subtitle",
+   "reason": "Explains the method instead of the chart's finding.",
+   "ids": [
+    "e5"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Training recipe two-stage block",
+   "reason": "Second point about method and pipeline, not the before-and-after result.",
+   "ids": [
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer AfterQuery wordmark",
+   "reason": "Brand already shown in the header logo.",
+   "ids": [
+    "e29"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 66,
+   "orange": 0,
+   "red": 34,
+   "unlabelled": 0,
+   "paintedOfCanvas": 28
+  },
+  "clutterShare": 34,
+  "areaShare": 34,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 69,
+   "over": 44,
+   "wordShare": 31.9,
+   "scoreFloor": 3
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 1,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 77,
+  "textElements": 21
+ }
+}

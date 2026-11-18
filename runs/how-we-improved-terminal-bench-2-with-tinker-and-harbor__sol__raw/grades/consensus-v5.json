@@ -1,0 +1,191 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.544Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 3,
+  "tiebreak": true,
+  "scores": [
+   5,
+   4,
+   4
+  ]
+ },
+ "main_idea": "Post-training lifts gpt-oss-20b on Terminal-Bench 2.0 from 3.1% to 17.0%.",
+ "ideas": [
+  "Pass rate rises from 3.1% to 17.0%",
+  "SFT then RLVR each add gains",
+  "Two-stage pipeline explained"
+ ],
+ "summary": "A solid bar chart is cluttered by a slogan headline, eyebrow tag, subtitle, sublabels, and a method-explainer strip, plus a duplicate brand footer.",
+ "clutter_score": 4,
+ "grader_clutter_score": 4,
+ "completeness_score": 10,
+ "missing": [],
+ "defects": [],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Eyebrow tag that tells the reader nothing needed.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Generic slogan; does not state the finding (could be: \"3.1% to 17.0% on Terminal-Bench 2.0\").",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and method context",
+   "reason": "Short context naming the model and tools.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and values",
+   "reason": "Bars, gridlines, and one value label per bar.",
+   "ids": [
+    "e5",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Metric label",
+   "reason": "Names the benchmark and metric.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Bar category labels",
+   "reason": "Needed to read what each bar stands for.",
+   "ids": [
+    "e16",
+    "e17",
+    "e18"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Bar sublabels",
+   "reason": "Descriptions repeat the method strip below and add clutter to labels.",
+   "ids": [
+    "e19",
+    "e20",
+    "e21"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method strip",
+   "reason": "Pipeline explanation of SFT and RLVR is a second idea beside the result.",
+   "ids": [
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "blue",
+   "type": "core",
+   "name": "Eval footnote",
+   "reason": "Quiet evaluation details footnote.",
+   "ids": [
+    "e32",
+    "e33"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer URL",
+   "reason": "Second brand mention when the logo is already present.",
+   "ids": [
+    "e34"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 64.2,
+   "orange": 0,
+   "red": 35.8,
+   "unlabelled": 0,
+   "paintedOfCanvas": 45.3
+  },
+  "clutterShare": 35.8,
+  "areaShare": 35.8,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 84,
+   "over": 59,
+   "wordShare": 35.1,
+   "scoreFloor": 4
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "repetition": 4,
+   "extra_idea": 10
+  },
+  "coverage": 100,
+  "words": 90,
+  "textElements": 25
+ }
+}

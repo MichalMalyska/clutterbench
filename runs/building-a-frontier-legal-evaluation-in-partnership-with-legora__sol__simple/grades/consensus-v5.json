@@ -1,0 +1,112 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.507Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 1,
+  "tiebreak": true,
+  "scores": [
+   4,
+   1,
+   2
+  ]
+ },
+ "main_idea": "Harness changes informed by BAR raised Legora's output quality by 5% in one month.",
+ "ideas": [
+  "BAR informs harness changes",
+  "Output quality rose 5%",
+  "Gains came on same production models in one month"
+ ],
+ "summary": "The graphic draws a three-step flow where one result callout would do, which adds boxes and arrows around a clear +5% result, but it is complete.",
+ "clutter_score": 2,
+ "grader_clutter_score": 2,
+ "completeness_score": 9,
+ "missing": [],
+ "defects": [
+  "Top shape e0 renders blank; nothing visible in its box",
+  "Flow arrows have no matching element ids, so cannot be checked against the list",
+  "Shape e0 (top-left, intended brand mark) is not visible in the screenshot"
+ ],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Arrow connector",
+   "reason": "Small arrow linking the steps; harmless and orients the reader.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark card",
+   "reason": "Names the benchmark and what it measures, the starting point of the flow",
+   "ids": [
+    "e1",
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Harness changes card",
+   "reason": "Names the cause of the improvement, needed to read the result",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% result",
+   "reason": "The key result with its metric label.",
+   "ids": [
+    "e6",
+    "e7",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Context footnote",
+   "reason": "Short, quiet context: same models, one month.",
+   "ids": [
+    "e9"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 62
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 13,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 14,
+  "textElements": 6
+ }
+}

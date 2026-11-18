@@ -1,0 +1,173 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:19.356Z",
+ "main_idea": "Distillation lifts GDPval net win-loss margin about 21% in two model families",
+ "ideas": [
+  "Distillation improves GDPval performance in Nemotron and Qwen",
+  "Student learns from teacher scoring its own rollouts",
+  "Net win-loss margin vs base: +20.9% and +21.4%",
+  "Mean rubric score gains of 5.1 and 7.9 points"
+ ],
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "summary": "Clutter is the slogan headline, eyebrow tags, subtitle and the method diagram plus mean-score row, which pull attention from the two net win-loss margins. Nothing essential is missing and no rendering defects are visible.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 14.1,
+  "usd": 0.004700880000000001,
+  "tokens": 37687,
+  "outputTokens": 2325
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark in the header.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Eyebrow tag above the page with no finding in it.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding; the result is in the stat blocks.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle restating finding",
+   "reason": "Paragraph restates the headline and the stat blocks below it.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow section label",
+   "reason": "Kicker line above the pipeline diagram; adds no data.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Training pipeline diagram",
+   "reason": "Method diagram serves a second point, not the GDPval result.",
+   "ids": [
+    "e5",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Net win-loss margin stats",
+   "reason": "Model names with the headline margins and their metric label.",
+   "ids": [
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Mean rubric score row",
+   "reason": "Secondary rubric-score metric, a different point from the win-loss margin.",
+   "ids": [
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footnote",
+   "reason": "Quiet footnote naming GDPval evaluation and the domain site.",
+   "ids": [
+    "e34",
+    "e35",
+    "e36"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 30.3,
+   "orange": 0,
+   "red": 69.7,
+   "unlabelled": 0,
+   "paintedOfCanvas": 41.3
+  },
+  "clutterShare": 69.7,
+  "areaShare": 69.7,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 87,
+   "over": 62,
+   "wordShare": 35.6,
+   "scoreFloor": 5
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 4,
+   "extra_idea": 2
+  },
+  "coverage": 100,
+  "words": 90,
+  "textElements": 25
+ }
+}

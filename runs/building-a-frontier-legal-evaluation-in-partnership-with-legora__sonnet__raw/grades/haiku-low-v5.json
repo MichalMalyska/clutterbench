@@ -1,0 +1,117 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:14:48.712Z",
+ "main_idea": "Harness changes informed by BAR raised output quality 5% in one month",
+ "ideas": [
+  "BAR is a legal benchmark for agentic reasoning",
+  "BAR-informed harness changes raised output quality 5%",
+  "BAR has 5,161 cases across 28 practice areas",
+  "Benchmark built with Legora"
+ ],
+ "clutter_score": 4,
+ "grader_clutter_score": 4,
+ "summary": "The +5% callout carries the result, but a dataset-size stats row and a repeated brand eyebrow add clutter, and the long title should be shortened to the benchmark name.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 11,
+  "usd": 0.00307597,
+  "tokens": 25644,
+  "outputTokens": 1409
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% result callout",
+   "reason": "The post's main result, stated with its value, metric and context.",
+   "ids": [
+    "e13",
+    "e14",
+    "e15"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Logo and URL footer",
+   "reason": "One brand mark and a quiet contact line.",
+   "ids": [
+    "e0",
+    "e16"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Long title",
+   "reason": "Names the benchmark, but the set-up phrasing is long. could be: \"BAR: Benchmark for Agentic Reasoning\"",
+   "ids": [
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "repetition",
+   "name": "Eyebrow brand line",
+   "reason": "Second brand mention; the logo and footer already identify AfterQuery.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset size stats row",
+   "reason": "Dataset counts are a second point beside the main 5% result.",
+   "ids": [
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 21.3,
+   "orange": 59.7,
+   "red": 19,
+   "unlabelled": 0,
+   "paintedOfCanvas": 38
+  },
+  "clutterShare": 48.9,
+  "areaShare": 48.9,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 34,
+   "over": 9,
+   "wordShare": 13.2,
+   "scoreFloor": 1
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "repetition": 1,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 39,
+  "textElements": 12
+ }
+}

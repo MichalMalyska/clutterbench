@@ -1,0 +1,156 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:55.341Z",
+ "main_idea": "GRPO lifts DeepSWE pass@1 from 27.8% to 39.1%",
+ "ideas": [
+  "GRPO raises Qwen3.8-27B DeepSWE pass@1 by 11.3 points",
+  "Base model scores 27.8%, trained model 39.1%"
+ ],
+ "clutter_score": 4,
+ "grader_clutter_score": 4,
+ "summary": "The chart is clear, but the slogan headline, category tag, dataset stats row and footer tagline are clutter; nothing needed is missing.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 12.5,
+  "usd": 0.00342368,
+  "tokens": 27156,
+  "outputTokens": 1890
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "DeepSWE before-after bars",
+   "reason": "Main visual: labelled bars, values, metric, and the +11.3 change annotation.",
+   "ids": [
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title",
+   "reason": "Short context naming the model and benchmark.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footnote",
+   "reason": "Quiet footnote giving evaluation setup for both models.",
+   "ids": [
+    "e27"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan-style headline; does not state the finding and the chart shows it.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Category tag repeats the topic and adds nothing to the chart.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset stats row",
+   "reason": "Dataset counts are a second point unrelated to the before-after result.",
+   "ids": [
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer tagline and URL",
+   "reason": "Tagline and URL are promotional filler, not needed to read the chart.",
+   "ids": [
+    "e28",
+    "e29",
+    "e30"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 52.5,
+   "orange": 0,
+   "red": 47.5,
+   "unlabelled": 0,
+   "paintedOfCanvas": 32.3
+  },
+  "clutterShare": 47.5,
+  "areaShare": 47.5,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 53,
+   "over": 28,
+   "wordShare": 26.4,
+   "scoreFloor": 2
+  },
+  "ideaCount": 2,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 59,
+  "textElements": 22
+ }
+}

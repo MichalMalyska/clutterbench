@@ -1,0 +1,236 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:18.046Z",
+ "main_idea": "Net win-loss margin of about +21% over base, with the same recipe in two model families",
+ "ideas": [
+  "On-policy distillation improves GDPval over the base model",
+  "Nemotron student gains +20.9% net win-loss margin",
+  "Qwen student gains +21.4% with the same recipe",
+  "Gains transfer across two model families"
+ ],
+ "clutter_score": 9,
+ "grader_clutter_score": 6,
+ "summary": "The two big margin numbers carry the result, but a second chart, a method pipeline, win-rate blocks and a stacked header bury it; the logo also does not render.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Logo (e1) is white on the cream background and is not visible",
+  "Pipeline and header text are small and crowded beside the main results"
+ ],
+ "cost": {
+  "seconds": 21.1,
+  "usd": 0.00336628,
+  "tokens": 40659,
+  "outputTokens": 3856
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand mark",
+   "reason": "One brand mark; the logo is invisible in the render, see defects.",
+   "ids": [
+    "e1",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Nemotron headline result",
+   "reason": "Model, benchmark and the +20.9% net win-loss margin with unit and label.",
+   "ids": [
+    "e7",
+    "e9",
+    "e11",
+    "e13",
+    "e15",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Qwen headline result",
+   "reason": "Second family and the +21.4% net win-loss margin, showing transfer.",
+   "ids": [
+    "e8",
+    "e10",
+    "e12",
+    "e14",
+    "e16",
+    "e18"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "States a finding, but wordy; could be: \"Stronger student in two model families\".",
+   "ids": [
+    "e5"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Header tag and kicker",
+   "reason": "Decorative rule, section tag and eyebrow above the headline; they encode nothing.",
+   "ids": [
+    "e0",
+    "e3",
+    "e4"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph restating what the chart already shows.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Qwen +7.9 pts stat",
+   "reason": "Second result (rubric score) beside the main margin; serves a different point.",
+   "ids": [
+    "e19",
+    "e21",
+    "e25"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Nemotron paired-comparison bar",
+   "reason": "Second chart of wins, ties and losses; the margin already carries the result.",
+   "ids": [
+    "e20",
+    "e22",
+    "e23",
+    "e24",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e39",
+    "e41",
+    "e42",
+    "e43"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Qwen win-rate and transfer block",
+   "reason": "Win-rate flow and footer add a second measure beyond the margin.",
+   "ids": [
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e40",
+    "e44",
+    "e45"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Distillation pipeline panel",
+   "reason": "Method diagram of the loop; the main idea is the result, not the mechanism.",
+   "ids": [
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50",
+    "e51",
+    "e52",
+    "e53",
+    "e54",
+    "e55",
+    "e56",
+    "e57",
+    "e58",
+    "e59",
+    "e60",
+    "e61",
+    "e62",
+    "e63",
+    "e64",
+    "e65"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer tagline and dot",
+   "reason": "Company tagline and decorative dot; no information for the chart.",
+   "ids": [
+    "e66",
+    "e69"
+   ]
+  },
+  {
+   "rid": "r11",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark footnote",
+   "reason": "Names the benchmark and evaluation set, quiet context.",
+   "ids": [
+    "e67",
+    "e68"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 23.1,
+   "orange": 20.9,
+   "red": 56,
+   "unlabelled": 0,
+   "paintedOfCanvas": 28
+  },
+  "clutterShare": 66.5,
+  "areaShare": 66.5,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 157,
+   "over": 132,
+   "wordShare": 42,
+   "scoreFloor": 9
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 4
+  },
+  "coverage": 100,
+  "words": 172,
+  "textElements": 53
+ }
+}

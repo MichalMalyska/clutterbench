@@ -1,0 +1,154 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:46.164Z",
+ "main_idea": "A simple prompt cuts model graphic clutter from 29–61% to 0–6%.",
+ "ideas": [
+  "Simple prompt cuts clutter",
+  "Models differ in raw clutter"
+ ],
+ "clutter_score": 3,
+ "grader_clutter_score": 2,
+ "summary": "Clean dot chart; the headline is a sentence and the subtitle restates what the legend and footnote say.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 7.9,
+  "usd": 0.055679000000000006,
+  "tokens": 24704,
+  "outputTokens": 697
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Logo wordmark",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline sentence",
+   "reason": "Full-sentence headline; could be: \"A simple prompt cuts clutter\".",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle",
+   "reason": "Explains the chart; metric is already named in the footnote and legend.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Legend",
+   "reason": "One legend identifying the two prompts.",
+   "ids": [
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Dot chart rows",
+   "reason": "Model labels, dots, and one value per mark.",
+   "ids": [
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Axis ticks",
+   "reason": "Axis ticks needed to read the scale.",
+   "ids": [
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Footnote",
+   "reason": "Quiet metric definition and evaluation details.",
+   "ids": [
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 34.8,
+   "orange": 46.6,
+   "red": 18.6,
+   "unlabelled": 0,
+   "paintedOfCanvas": 18.7
+  },
+  "clutterShare": 41.9,
+  "areaShare": 41.9,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 68,
+   "over": 43,
+   "wordShare": 31.6,
+   "scoreFloor": 3
+  },
+  "ideaCount": 2,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 1
+  },
+  "coverage": 100,
+  "words": 86,
+  "textElements": 28
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:43.845Z",
+ "main_idea": "PivotRL lifts Qwen3.5-9B pass@5 on τ³-Banking from 11.3% to 17.5%",
+ "ideas": [
+  "Qwen3.5-9B pass@5 rises from 11.3% to 17.5%",
+  "Training used PivotRL on τ³-Banking",
+  "Method pipeline used to get the gain",
+  "Evaluation scale: 97 tasks, 193 pivots"
+ ],
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "summary": "The core pass@5 comparison is clear, but the long headline, method cards, and stats row clutter it, and the pill, subtitle and tagline add nothing.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 16,
+  "usd": 0.0027845,
+  "tokens": 29491,
+  "outputTokens": 2897
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Pass@5 comparison",
+   "reason": "Main visual: baseline and trained values, labels, and bars.",
+   "ids": [
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Long headline",
+   "reason": "Narrates set-up. Could be: \"Pass@5 on τ³-Banking rises to 17.5%\".",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Contact URL",
+   "reason": "Short contact line for the source.",
+   "ids": [
+    "e45"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Date pill",
+   "reason": "Badge pill with category and date; reader does not need it.",
+   "ids": [
+    "e1",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Subtitle explains the method instead of the result.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer tagline",
+   "reason": "Decorative dot and company tagline add nothing to the chart.",
+   "ids": [
+    "e46",
+    "e47"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method pipeline cards",
+   "reason": "Three-stage method diagram is a second point beside the result.",
+   "ids": [
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset stats row",
+   "reason": "Counts about dataset and training setup, not the main result.",
+   "ids": [
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 29.5,
+   "orange": 29.6,
+   "red": 41,
+   "unlabelled": 0,
+   "paintedOfCanvas": 35.7
+  },
+  "clutterShare": 55.8,
+  "areaShare": 55.8,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 107,
+   "over": 82,
+   "wordShare": 38.3,
+   "scoreFloor": 6
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 2
+  },
+  "coverage": 100,
+  "words": 125,
+  "textElements": 32
+ }
+}

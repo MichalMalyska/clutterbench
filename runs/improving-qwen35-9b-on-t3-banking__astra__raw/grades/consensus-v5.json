@@ -1,0 +1,211 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.549Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 14,
+  "tiebreak": true,
+  "scores": [
+   6,
+   6,
+   5
+  ]
+ },
+ "main_idea": "Qwen3.5-9B improved from 11.3% to 17.5% pass@5 on τ³-Banking with little training data.",
+ "ideas": [
+  "Pass@5 rose from 11.3% to 17.5%",
+  "Fewer than 250 training tasks",
+  "Two-stage method: Hybrid OPD then PivotRL",
+  "193 pivots from 50 teacher trajectories"
+ ],
+ "summary": "A clear bar chart is buried under a slogan headline, subtitle, tags and a two-card method section; nothing essential is missing.",
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "completeness_score": 9,
+ "missing": [],
+ "defects": [],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark, keep.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Kicker tag telling the reader nothing needed.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Slogan headline",
+   "reason": "Two-sentence slogan, oversized; could be: \"11.3% → 17.5% on τ³-Banking\"",
+   "ids": [
+    "e23"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle",
+   "reason": "Restates the post title and method; chart already names benchmark and model.",
+   "ids": [
+    "e24"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Main bar chart",
+   "reason": "Two bars with values, benchmark and metric labelled.",
+   "ids": [
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e32",
+    "e33",
+    "e34"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "pass@5 bar chart",
+   "reason": "Main visual: two labelled bars, benchmark, metric, and evaluation footnote.",
+   "ids": [
+    "e31",
+    "e35"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Eval footnote",
+   "reason": "Quiet evaluation details.",
+   "ids": [
+    "e36"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method stages",
+   "reason": "Method pipeline cards serve a second point beside the result.",
+   "ids": [
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45",
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer rule box",
+   "reason": "Footer container, decorative.",
+   "ids": [
+    "e51"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer tagline",
+   "reason": "Tagline not needed to read the result.",
+   "ids": [
+    "e52"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer URL",
+   "reason": "Brand repeated; logo already present.",
+   "ids": [
+    "e53"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 42.2,
+   "orange": 24.2,
+   "red": 33.5,
+   "unlabelled": 0,
+   "paintedOfCanvas": 35.1
+  },
+  "clutterShare": 45.6,
+  "areaShare": 45.6,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 91,
+   "over": 66,
+   "wordShare": 36.3,
+   "scoreFloor": 5
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 4,
+   "extra_idea": 14,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 99,
+  "textElements": 25
+ }
+}

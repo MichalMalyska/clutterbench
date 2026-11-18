@@ -1,0 +1,113 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:49.691Z",
+ "main_idea": "BAR is a large benchmark: 5,161 cases, 11,075 documents, 28 practice areas",
+ "ideas": [
+  "BAR has 5,161 cases",
+  "BAR has 11,075 source documents",
+  "BAR covers 28 practice areas"
+ ],
+ "clutter_score": 7,
+ "grader_clutter_score": 7,
+ "summary": "The graphic is three dataset-size stat rows that are extras, while the post's 5% quality-gain result is missing entirely.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "main result: 5% quality gain",
+   "why": "The post's key finding is that BAR-informed harness changes raised output quality 5%; the graphic omits it."
+  },
+  {
+   "mid": "m1",
+   "what": "what the post's claim is about",
+   "why": "Without the result, the reader sees only dataset sizes and cannot tell why BAR matters."
+  }
+ ],
+ "completeness_score": 3,
+ "defects": [
+  "No rendering defects visible; logo and text display correctly."
+ ],
+ "cost": {
+  "seconds": 10.5,
+  "usd": 0.00194877,
+  "tokens": 25173,
+  "outputTokens": 1278
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand and benchmark label",
+   "reason": "One logo and a short benchmark name identify what is measured.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Cases count row",
+   "reason": "Dataset size stat; does not show the post's main result (5% quality gain).",
+   "ids": [
+    "e2",
+    "e3",
+    "e4"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Source documents row",
+   "reason": "Dataset size stat; a second point unrelated to the post's main result.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Practice areas row",
+   "reason": "Dataset size stat; a second point unrelated to the post's main result.",
+   "ids": [
+    "e8",
+    "e9",
+    "e10"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 1.6,
+   "orange": 0,
+   "red": 98.4,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34
+  },
+  "clutterShare": 98.4,
+  "areaShare": 98.4,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 7,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 2,
+  "redByType": {
+   "extra_idea": 3
+  },
+  "coverage": 100,
+  "words": 10,
+  "textElements": 7
+ }
+}

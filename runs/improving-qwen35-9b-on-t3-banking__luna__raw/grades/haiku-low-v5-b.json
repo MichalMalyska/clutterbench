@@ -1,0 +1,178 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:44.275Z",
+ "main_idea": "PivotRL lifts Qwen3.5-9B pass@5 from 11.3% to 17.5% on τ³-Banking",
+ "ideas": [
+  "PivotRL raises pass@5 from 11.3% to 17.5%",
+  "Gain comes from only 50 teacher trajectories",
+  "Benchmark is τ³-Banking, metric is pass@5"
+ ],
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "summary": "The bar chart is clear and labelled, but a slogan headline, subtitle, stat cards, decorative texture and a repeated brand line clutter it; nothing essential is missing.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Decorative faint shapes at right are clipped by the canvas edge"
+ ],
+ "cost": {
+  "seconds": 13.7,
+  "usd": 0.00250712,
+  "tokens": 28014,
+  "outputTokens": 2363
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "One brand mark, kept as the single logo.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and benchmark tag",
+   "reason": "Short context naming the model and benchmark.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Before/after bar chart",
+   "reason": "Bars, values, labels, axis ticks, metric, and axis title carry the result.",
+   "ids": [
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag above the content; tells the reader nothing new.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan, not a finding; the chart already states the result.",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph restating the method and chart; not needed to read the bars.",
+   "ids": [
+    "e7"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Decorative texture and icon",
+   "reason": "Ornamental shapes and trend glyph encode no number from the post.",
+   "ids": [
+    "e6",
+    "e13"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset count cards",
+   "reason": "Stat cards about 50 teacher trajectories and 193 pivots serve a second point.",
+   "ids": [
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e28",
+    "e29"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Takeaway sentence",
+   "reason": "Tagline-style takeaway that repeats the subtitle's message.",
+   "ids": [
+    "e27"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer brand line",
+   "reason": "Second AfterQuery brand mark beside the existing logo.",
+   "ids": [
+    "e30"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 28.6,
+   "orange": 0,
+   "red": 71.4,
+   "unlabelled": 0,
+   "paintedOfCanvas": 15.7
+  },
+  "clutterShare": 71.4,
+  "areaShare": 71.4,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 56,
+   "over": 31,
+   "wordShare": 27.7,
+   "scoreFloor": 3
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 5,
+   "extra_idea": 1,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 66,
+  "textElements": 23
+ }
+}

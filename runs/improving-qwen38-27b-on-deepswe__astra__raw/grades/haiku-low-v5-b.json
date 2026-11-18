@@ -1,0 +1,174 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:49.547Z",
+ "main_idea": "GRPO lifts Qwen3.8-27B's DeepSWE pass@1 from 27.8% to 39.1%",
+ "ideas": [
+  "GRPO raises DeepSWE pass@1 by 11.3 points",
+  "Base model 27.8% versus 39.1% after GRPO",
+  "Training used 500 tasks from real workflows"
+ ],
+ "clutter_score": 4,
+ "grader_clutter_score": 4,
+ "summary": "A solid before-and-after bar chart with a clear metric, plus a dataset stats row, slogan headline, category tag and tagline that should go.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 12.3,
+  "usd": 0.00227275,
+  "tokens": 27181,
+  "outputTokens": 1911
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and change",
+   "reason": "Names the benchmark and metric, plus the +11.3 point change annotation.",
+   "ids": [
+    "e6",
+    "e8",
+    "e9",
+    "e5",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Before and after bars",
+   "reason": "The main visual: labelled bars with values showing the result.",
+   "ids": [
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and benchmark subtitle",
+   "reason": "Short context identifying the model and benchmark measured.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "The single brand mark.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footnote",
+   "reason": "Quiet detail on task source and evaluation setup.",
+   "ids": [
+    "e27"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Website contact line",
+   "reason": "Small contact line in the footer.",
+   "ids": [
+    "e30"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Vague slogan; does not state the finding that the chart shows.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Eyebrow category tag above the chart; tells the reader nothing needed.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset stats row",
+   "reason": "Dataset counts and GRPO update count serve a second point, not the bar result.",
+   "ids": [
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer tagline",
+   "reason": "Tagline restating the brand's purpose; decorative and not needed to read the chart.",
+   "ids": [
+    "e28",
+    "e29"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 48.6,
+   "orange": 0,
+   "red": 46.9,
+   "unlabelled": 4.5,
+   "paintedOfCanvas": 32.3
+  },
+  "clutterShare": 46.9,
+  "areaShare": 46.9,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 53,
+   "over": 28,
+   "wordShare": 26.4,
+   "scoreFloor": 2
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 1
+  },
+  "coverage": 97,
+  "words": 59,
+  "textElements": 22
+ }
+}

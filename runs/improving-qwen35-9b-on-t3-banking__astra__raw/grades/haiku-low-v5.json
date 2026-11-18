@@ -1,0 +1,200 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:42.463Z",
+ "main_idea": "Hybrid OPD plus PivotRL lifts τ³-Banking pass@5 from 11.3% to 17.5%.",
+ "ideas": [
+  "Training lifts Qwen3.5-9B pass@5 on τ³-Banking",
+  "Fewer than 250 training tasks suffice",
+  "Method: hybrid OPD then PivotRL",
+  "Same 97 tasks, five attempts each"
+ ],
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "summary": "The bar chart carries the result cleanly, but the method cards, stats row, taglines, and footer add a second story and extra brand mention, and the headline is a two-sentence slogan.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 18,
+  "usd": 0.00431726,
+  "tokens": 29971,
+  "outputTokens": 3396
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "One brand mark, kept as is.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "pass@5 bar chart",
+   "reason": "Main visual: two labelled bars, benchmark, metric, and evaluation footnote.",
+   "ids": [
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Two-sentence headline",
+   "reason": "Two clauses and a generic slogan; the finding is the bars. could be: \"Under 250 tasks lifts banking agent pass rate\"",
+   "ids": [
+    "e23"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Section eyebrow",
+   "reason": "Category tag above the headline tells the reader nothing needed.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle paragraph",
+   "reason": "Restates the chart's model, benchmark and method; adds no result.",
+   "ids": [
+    "e24"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Method tagline",
+   "reason": "Kicker line introducing the stage cards; explains rather than informs.",
+   "ids": [
+    "e37"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Stage 1 and Stage 2 cards",
+   "reason": "Method pipeline beside the results chart; a second point, plus an ornamental arrow.",
+   "ids": [
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45",
+    "e46",
+    "e47"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "193 pivots stat line",
+   "reason": "Dataset count for the method, not the pass-rate result.",
+   "ids": [
+    "e48",
+    "e49",
+    "e50"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer attribution bar",
+   "reason": "Data-source attribution line and rule; not needed to read the chart.",
+   "ids": [
+    "e51",
+    "e52"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer URL",
+   "reason": "Second brand mention; the logo already shows the brand.",
+   "ids": [
+    "e53"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 42.2,
+   "orange": 24.2,
+   "red": 33.5,
+   "unlabelled": 0,
+   "paintedOfCanvas": 35.1
+  },
+  "clutterShare": 45.6,
+  "areaShare": 45.6,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 91,
+   "over": 66,
+   "wordShare": 36.3,
+   "scoreFloor": 5
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 4,
+   "extra_idea": 2,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 99,
+  "textElements": 25
+ }
+}

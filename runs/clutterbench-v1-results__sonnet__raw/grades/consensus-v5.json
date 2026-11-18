@@ -1,0 +1,132 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.522Z",
+ "consensus": {
+  "haikuAgreed": true,
+  "elementsChanged": 0,
+  "tiebreak": false,
+  "scores": [
+   1
+  ]
+ },
+ "main_idea": "A simple prompt cuts model clutter scores to near zero",
+ "ideas": [
+  "Simple prompt removes clutter for all models",
+  "Raw prompt leaves high clutter scores",
+  "Claude Sonnet 5.5 has the least raw clutter"
+ ],
+ "summary": "Nearly clean: only the headline is a wordy instruction that could be shortened to \"A simple prompt cuts clutter\"; nothing needed is missing.",
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "completeness_score": 10,
+ "missing": [],
+ "defects": [],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "ClutterBench logo",
+   "reason": "One brand mark, short and clear.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline sentence",
+   "reason": "Instruction-style sentence the long way round. could be: \"A simple prompt cuts clutter\"",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Legend and metric",
+   "reason": "One legend naming both conditions and the metric, direction stated.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Model rows and values",
+   "reason": "Model names, marks and one value label per mark, needed to read the chart.",
+   "ids": [
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Axis ticks",
+   "reason": "Percent axis ticks needed to read the marks.",
+   "ids": [
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 35.5,
+   "orange": 64.5,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 17.1
+  },
+  "clutterShare": 32.3,
+  "areaShare": 32.3,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 28,
+   "over": 3,
+   "wordShare": 5.4,
+   "scoreFloor": 1
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 46,
+  "textElements": 26
+ }
+}

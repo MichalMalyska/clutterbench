@@ -1,0 +1,157 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:37.294Z",
+ "main_idea": "Hybrid distillation plus PivotRL lifts Qwen3.5-9B pass@5 from 11.3% to 17.5% on τ³-Banking",
+ "ideas": [
+  "Training lifts banking agent pass@5 from 11.3% to 17.5%",
+  "Fewer than 250 training tasks were needed",
+  "Two-stage method: hybrid OPD, then PivotRL"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "A solid bar chart is buried under a method pipeline, a subtitle, a category tag, and a footer promo; headline is slogan-like.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 12.5,
+  "usd": 0.0022399000000000004,
+  "tokens": 28355,
+  "outputTokens": 1820
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Pass@5 bar chart",
+   "reason": "Main result: labelled bars, values, benchmark, metric, and evaluation footnote.",
+   "ids": [
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "Slogan-like and wordy; could be: \"Fewer than 250 tasks lift banking pass@5\".",
+   "ids": [
+    "e23"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle restating chart",
+   "reason": "Explains the chart's set-up and method already named in the headline and labels.",
+   "ids": [
+    "e24"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Category tag above the chart, tells the reader nothing needed.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method pipeline cards",
+   "reason": "Method explanation and pivot counts serve a second point, not the result chart.",
+   "ids": [
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45",
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer promo line",
+   "reason": "Marketing line and repeated domain; the logo already brands the graphic.",
+   "ids": [
+    "e51",
+    "e52",
+    "e53"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 41.7,
+   "orange": 24.2,
+   "red": 33.5,
+   "unlabelled": 0.5,
+   "paintedOfCanvas": 35.1
+  },
+  "clutterShare": 45.6,
+  "areaShare": 45.6,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 91,
+   "over": 66,
+   "wordShare": 36.3,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 1
+  },
+  "coverage": 74,
+  "words": 99,
+  "textElements": 25
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:17.659Z",
+ "main_idea": "Warmup lifts GDPval score from 35.3 to 46.7, close to the 49.5 teacher",
+ "ideas": [
+  "Warmup lifts GDPval score from 35.3 to 46.7",
+  "Warmed-up Ultra nears the teacher, 2.8 points behind",
+  "Method: AfterQuery trajectories feed the warmup and pivot RL"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 3,
+ "summary": "The bar chart carries the result cleanly; the subtitle, eyebrow, method cards and repeated URL are clutter, and the metric unit is not named.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "metric unit",
+   "why": "Bars are scores, but no label says the value is a GDPval score or percentage."
+  }
+ ],
+ "completeness_score": 8,
+ "defects": [],
+ "cost": {
+  "seconds": 15.3,
+  "usd": 0.00408372,
+  "tokens": 31189,
+  "outputTokens": 2487
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "One brand mark, kept as the single logo.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag above the header; tells the reader nothing needed.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline",
+   "reason": "Names the subject and benchmark in a short headline.",
+   "ids": [
+    "e23"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph restating the method the chart already implies; not needed to read the bars.",
+   "ids": [
+    "e24"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Warmup ablation bar chart",
+   "reason": "Labelled bars, values, one legend, chart title, and the 2.8-point gap annotation.",
+   "ids": [
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method step cards",
+   "reason": "Pipeline explanation beside the results chart; serves a second point, not the result.",
+   "ids": [
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50",
+    "e51",
+    "e52"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Source footnote",
+   "reason": "Quiet footnote giving benchmark and source.",
+   "ids": [
+    "e53",
+    "e54"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer URL",
+   "reason": "Brand shown again in the footer while the logo already marks it.",
+   "ids": [
+    "e55"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 77.8,
+   "orange": 0,
+   "red": 22.2,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34.1
+  },
+  "clutterShare": 35.5,
+  "areaShare": 22.2,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 86,
+   "over": 61,
+   "wordShare": 35.5,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 1,
+  "redByType": {
+   "unneeded": 2,
+   "extra_idea": 1,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 92,
+  "textElements": 26
+ }
+}

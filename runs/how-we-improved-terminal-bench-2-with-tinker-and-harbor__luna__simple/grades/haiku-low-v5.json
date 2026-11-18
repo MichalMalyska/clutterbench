@@ -1,0 +1,112 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:27.151Z",
+ "main_idea": "Training lifts the base model's Terminal-Bench 2.0 pass rate over 5x",
+ "ideas": [
+  "Training raises terminal task pass rate over 5x",
+  "Base model 3.1% versus AfterQuery trained 17.0%",
+  "Measured on Terminal-Bench 2.0 with gpt-oss-20b"
+ ],
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "summary": "Clean and nearly complete; only the full-sentence headline is wordy, and the logo fails to render.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "AfterQuery logo image (e1) is not visible in the screenshot; only the wordmark shows"
+ ],
+ "cost": {
+  "seconds": 10.9,
+  "usd": 0.0035688300000000003,
+  "tokens": 30478,
+  "outputTokens": 1372
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Before-after bar chart",
+   "reason": "Bars, value labels, category labels and baseline carry the main result.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand header",
+   "reason": "Single brand mark with its rule; the logo is missing in render, see defects.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark tag",
+   "reason": "Names the benchmark being measured.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Full-sentence headline",
+   "reason": "Full sentence says the finding the long way; the bare finding fits.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and metric footer",
+   "reason": "Quiet footnote naming the model and the Pass@1 metric.",
+   "ids": [
+    "e13"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 75.7,
+   "orange": 24.3,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 22
+  },
+  "clutterShare": 12.2,
+  "areaShare": 12.2,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 18,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 21,
+  "textElements": 8
+ }
+}

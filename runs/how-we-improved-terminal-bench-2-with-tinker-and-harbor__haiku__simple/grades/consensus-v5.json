@@ -1,0 +1,70 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.540Z",
+ "consensus": {
+  "haikuAgreed": true,
+  "elementsChanged": 0,
+  "tiebreak": false,
+  "scores": [
+   0
+  ]
+ },
+ "main_idea": "AfterQuery's training lifted Terminal-Bench 2.0 pass rate from 3.1% to 17.0%",
+ "ideas": [
+  "Terminal-Bench 2.0 pass rate rose from 3.1% to 17.0%",
+  "Benchmark is Terminal-Bench 2.0",
+  "AfterQuery model beats the base model"
+ ],
+ "summary": "Clean and complete: a simple two-bar chart that names the benchmark, metric, values and categories with nothing extra to remove.",
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "completeness_score": 10,
+ "missing": [],
+ "defects": [
+  "Logo at top-left and bottom axis line are visible but not in the element list"
+ ],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Pass rate bar chart",
+   "reason": "Benchmark title, two labelled bars with values and category names. Clear and complete.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 100
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 5,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 8,
+  "textElements": 5
+ }
+}

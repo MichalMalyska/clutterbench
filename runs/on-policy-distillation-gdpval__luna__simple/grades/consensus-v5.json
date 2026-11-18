@@ -1,0 +1,143 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.579Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 1,
+  "tiebreak": true,
+  "scores": [
+   2,
+   2,
+   1
+  ]
+ },
+ "main_idea": "Distilled model beats base model on GDPval: 123 wins, 20 ties, 77 losses over 220 tasks.",
+ "ideas": [
+  "Distilled model wins most GDPval task pairs against base"
+ ],
+ "summary": "Clean single bar chart, but it has a duplicate logo and URL footer, and the base-model comparison is not stated.",
+ "clutter_score": 2,
+ "grader_clutter_score": 2,
+ "completeness_score": 7,
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "baseline named (vs base model)",
+   "why": "Reader cannot tell wins are against the undistilled base model."
+  }
+ ],
+ "defects": [
+  "Losses swatch and segment are very faint against cream background, low contrast",
+  "Losses legend swatch nearly invisible"
+ ],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline",
+   "reason": "Short headline that names the finding.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Top logo",
+   "reason": "One brand mark is kept.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and scope",
+   "reason": "Short context naming model and number of task pairs.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Win/tie/loss bar",
+   "reason": "Main visual with one value label per segment.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Legend",
+   "reason": "Single legend identifying the segments.",
+   "ids": [
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Footer URL",
+   "reason": "Brand URL adds nothing for the reader.",
+   "ids": [
+    "e15"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer logo",
+   "reason": "Second AfterQuery logo duplicates the top one.",
+   "ids": [
+    "e16"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 95.7,
+   "orange": 0,
+   "red": 4.3,
+   "unlabelled": 0,
+   "paintedOfCanvas": 9.6
+  },
+  "clutterShare": 4.3,
+  "areaShare": 4.3,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 16,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 1,
+  "missingCount": 1,
+  "redByType": {
+   "unneeded": 1,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 19,
+  "textElements": 9
+ }
+}

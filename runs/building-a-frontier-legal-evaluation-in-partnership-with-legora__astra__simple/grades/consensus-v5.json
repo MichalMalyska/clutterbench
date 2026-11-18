@@ -1,0 +1,162 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.488Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 3,
+  "tiebreak": true,
+  "scores": [
+   6,
+   5,
+   4
+  ]
+ },
+ "main_idea": "Harness changes informed by BAR raised Legora's output quality 5% in one month, same models.",
+ "ideas": [
+  "BAR-informed harness changes improved output quality 5%",
+  "BAR evaluation feeds harness changes",
+  "Models stayed the same"
+ ],
+ "summary": "The graphic shows a pipeline diagram instead of a result chart, so the BAR box, harness step and icons crowd the single +5% stat.",
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "completeness_score": 7,
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "baseline or what +5% compares",
+   "why": "Reader cannot see before/after; only a single stat with no chart."
+  }
+ ],
+ "defects": [],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "Slogan-like phrasing; could be: \"BAR-guided changes lift output quality 5%\".",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "BAR evaluation box",
+   "reason": "Pipeline step with document icon; the result is the +5%, not the process.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Same models label",
+   "reason": "Short context that frames the comparison.",
+   "ids": [
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Same models frame",
+   "reason": "Short context that the comparison holds models fixed",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Harness changes label",
+   "reason": "Names the intervention behind the result",
+   "ids": [
+    "e9"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Harness changes step",
+   "reason": "Method diagram with slider icon and arrow; illustration, not the result.",
+   "ids": [
+    "e10",
+    "e11",
+    "e12",
+    "e13"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "blue",
+   "type": "core",
+   "name": "Timeframe label",
+   "reason": "Short context giving the time span",
+   "ids": [
+    "e14"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% output quality",
+   "reason": "The result with its metric; the up arrow is small.",
+   "ids": [
+    "e15",
+    "e16",
+    "e17",
+    "e18"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 71.7,
+   "orange": 3.1,
+   "red": 25.2,
+   "unlabelled": 0,
+   "paintedOfCanvas": 65.1
+  },
+  "clutterShare": 26.8,
+  "areaShare": 26.8,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 17,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 1,
+  "redByType": {
+   "extra_idea": 4,
+   "unneeded": 4
+  },
+  "coverage": 100,
+  "words": 17,
+  "textElements": 7
+ }
+}

@@ -1,0 +1,200 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:17.549Z",
+ "main_idea": "Warmup lifts Ultra's GDPval score from 35.3 to 46.7, close to the teacher's 49.5",
+ "ideas": [
+  "Warmup raises GDPval score from 35.3 to 46.7",
+  "Warmed-up student nears the teacher, 2.8 points behind",
+  "Warmup uses AfterQuery tasks, SFT, then pivot RL"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 4,
+ "summary": "A solid bar chart is buried under a restating subtitle, a category tag and a block of method cards that should go; nothing needed is missing.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 15.3,
+  "usd": 0.00267453,
+  "tokens": 31340,
+  "outputTokens": 2636
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "One brand mark; keep as is.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Category tag",
+   "reason": "Section tag above the header adds nothing to the finding.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline",
+   "reason": "States the finding in a short phrase naming the benchmark.",
+   "ids": [
+    "e23"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph restates what the chart already shows.",
+   "ids": [
+    "e24"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and legend",
+   "reason": "Names the benchmark and ablation; one legend for the green series.",
+   "ids": [
+    "e25",
+    "e26"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and value labels",
+   "reason": "Data marks with one value label each.",
+   "ids": [
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e35",
+    "e36",
+    "e38"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Gap annotation",
+   "reason": "Small annotation marking the change between bars.",
+   "ids": [
+    "e27",
+    "e33",
+    "e34",
+    "e37"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "blue",
+   "type": "core",
+   "name": "Category labels",
+   "reason": "Bar labels and context tags needed to read the chart.",
+   "ids": [
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method pipeline cards",
+   "reason": "Method steps serve a second point beside the results chart.",
+   "ids": [
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50",
+    "e51",
+    "e52"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "blue",
+   "type": "core",
+   "name": "Source footer",
+   "reason": "Quiet source line and contact URL.",
+   "ids": [
+    "e53",
+    "e54",
+    "e55"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 78.3,
+   "orange": 0,
+   "red": 21.7,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34.1
+  },
+  "clutterShare": 35.5,
+  "areaShare": 21.7,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 86,
+   "over": 61,
+   "wordShare": 35.5,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 92,
+  "textElements": 26
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:50.986Z",
+ "main_idea": "A simple prompt cuts clutter score from 29-61% to 0-6% across all four models.",
+ "ideas": [
+  "Simple prompt cuts clutter for every model",
+  "Raw clutter differs by model"
+ ],
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "summary": "Clean and complete: a single slope chart with a short headline, logo and footnote.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 7.5,
+  "usd": 0.0551154,
+  "tokens": 24558,
+  "outputTokens": 664
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Logo wordmark",
+   "reason": "Single brand mark, small and quiet.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Headline",
+   "reason": "States the finding in a short sentence.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Metric subtitle",
+   "reason": "Names the metric and direction, short.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Category labels",
+   "reason": "Prompt and model labels needed to read the chart.",
+   "ids": [
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e34",
+    "e35",
+    "e36",
+    "e37"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Slope chart marks",
+   "reason": "Points, lines and gridlines carrying the data.",
+   "ids": [
+    "e12",
+    "e14",
+    "e15",
+    "e16",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e24",
+    "e25",
+    "e26",
+    "e28",
+    "e29",
+    "e30"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Value labels",
+   "reason": "One value label per mark.",
+   "ids": [
+    "e13",
+    "e17",
+    "e18",
+    "e23",
+    "e27",
+    "e31",
+    "e32",
+    "e33"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Footnote",
+   "reason": "Quiet evaluation detail footnote.",
+   "ids": [
+    "e38",
+    "e39"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 51.8
+  },
+  "clutterShare": 16.2,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 37,
+   "over": 12,
+   "wordShare": 16.2,
+   "scoreFloor": 1
+  },
+  "ideaCount": 2,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 48,
+  "textElements": 25
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:49.080Z",
+ "main_idea": "SFT plus RLVR lifts gpt-oss-20b pass rate from 3.1% to 17.0%",
+ "ideas": [
+  "Training lifts Terminal-Bench 2.0 pass rate about 5x",
+  "Each stage adds to the pass rate",
+  "Training used zero official eval tasks"
+ ],
+ "clutter_score": 2,
+ "grader_clutter_score": 2,
+ "summary": "Clean and focused; only a repeated stage tag per row and a second footer brand mark should go, and nothing essential is missing.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 14.6,
+  "usd": 0.00254698,
+  "tokens": 31722,
+  "outputTokens": 2352
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand logo",
+   "reason": "One brand mark, kept once.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark and model tag",
+   "reason": "Names the benchmark and model being measured.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Finding headline",
+   "reason": "States the 5x finding in two short lines.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Base model bar",
+   "reason": "Bar, value, row label and agent context for the baseline.",
+   "ids": [
+    "e3",
+    "e4",
+    "e5",
+    "e6"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "SFT only bar",
+   "reason": "Bar, value and row label for the SFT stage.",
+   "ids": [
+    "e7",
+    "e8",
+    "e9"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "SFT plus RLVR bar",
+   "reason": "Bar, value and row label for the final result.",
+   "ids": [
+    "e11",
+    "e12",
+    "e13"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Footer note",
+   "reason": "Quiet footnote on evaluation scope, kept as context.",
+   "ids": [
+    "e15",
+    "e16"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Stage tags",
+   "reason": "'Stage 1' and 'Stage 2' repeat what the row labels already say.",
+   "ids": [
+    "e10",
+    "e14"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer wordmark",
+   "reason": "Second brand mark when the logo already appears at top.",
+   "ids": [
+    "e17"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 97.8,
+   "orange": 0,
+   "red": 2.2,
+   "unlabelled": 0,
+   "paintedOfCanvas": 25.8
+  },
+  "clutterShare": 6.9,
+  "areaShare": 2.2,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 29,
+   "over": 4,
+   "wordShare": 6.9,
+   "scoreFloor": 1
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "repetition": 2
+  },
+  "coverage": 100,
+  "words": 37,
+  "textElements": 13
+ }
+}

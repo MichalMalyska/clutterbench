@@ -1,0 +1,114 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:40.295Z",
+ "main_idea": "Training lifts Qwen3.5-9B pass rate from 11.3% to 17.5%",
+ "ideas": [
+  "Qwen3.5-9B pass@5 rises after training",
+  "Gain is 6.2 percentage points",
+  "Before versus after bars"
+ ],
+ "clutter_score": 0,
+ "grader_clutter_score": 0,
+ "summary": "Clean and simple, with nothing to remove; it lacks the benchmark name (τ³-Banking) that says what was measured.",
+ "missing": [
+  {
+   "mid": "m0",
+   "what": "benchmark name",
+   "why": "Graphic says pass@5 but never names τ³-Banking, so the reader cannot tell what was measured."
+  }
+ ],
+ "completeness_score": 6,
+ "defects": [],
+ "cost": {
+  "seconds": 9.2,
+  "usd": 0.00192611,
+  "tokens": 25954,
+  "outputTokens": 1229
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand logo",
+   "reason": "Single brand mark, small and unobtrusive.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and metric title",
+   "reason": "Names the model and metric, a short chart title.",
+   "ids": [
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Change annotation",
+   "reason": "Small annotation marking the change between the bars.",
+   "ids": [
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and value labels",
+   "reason": "Data marks with one value label per bar, plus the gridlines and frame.",
+   "ids": [
+    "e1",
+    "e4",
+    "e6",
+    "e7",
+    "e8",
+    "e9"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Category labels",
+   "reason": "Before and After labels needed to read the bars.",
+   "ids": [
+    "e10",
+    "e11"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 8.6
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 7,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 1,
+  "redByType": {},
+  "coverage": 100,
+  "words": 9,
+  "textElements": 7
+ }
+}

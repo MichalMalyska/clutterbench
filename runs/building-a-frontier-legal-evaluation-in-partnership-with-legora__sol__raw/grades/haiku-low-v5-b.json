@@ -1,0 +1,186 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:16:41.709Z",
+ "main_idea": "BAR-informed harness changes raised Legora's output quality 5% in one month",
+ "ideas": [
+  "BAR-informed harness changes raised output quality 5%",
+  "Benchmark covers 5,161 legal cases",
+  "Benchmark built with Legora through a define-validate-improve process"
+ ],
+ "clutter_score": 7,
+ "grader_clutter_score": 7,
+ "summary": "The +5% result is a small band among dataset stats, a process diagram and slogans that all compete with it; the metric and benchmark are clear enough, so nothing essential is missing.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [],
+ "cost": {
+  "seconds": 14.3,
+  "usd": 0.0024179500000000003,
+  "tokens": 27701,
+  "outputTokens": 2175
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand header",
+   "reason": "One logo and a short partner line; a single brand mark is allowed.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Kicker line above the headline that adds no finding.",
+   "ids": [
+    "e23"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding; the +5% is the real headline.",
+   "ids": [
+    "e24"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Benchmark name line",
+   "reason": "Names the benchmark and what it evaluates, which the reader needs.",
+   "ids": [
+    "e25"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Dataset size stats row",
+   "reason": "Case, practice-area and document counts serve a second point, not the +5% result.",
+   "ids": [
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e33",
+    "e34"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Three-step process diagram",
+   "reason": "Define, validate, improve pipeline is method illustration, not the result.",
+   "ids": [
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% result callout",
+   "reason": "Main result with its metric and cause; the one point the graphic should make.",
+   "ids": [
+    "e44",
+    "e45",
+    "e46",
+    "e47"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Tagline footer",
+   "reason": "Slogan-style tagline that does not inform the reader.",
+   "ids": [
+    "e48"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "repetition",
+   "name": "Website URL",
+   "reason": "Brand already shown by the logo; the URL repeats it.",
+   "ids": [
+    "e49"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 35,
+   "orange": 0,
+   "red": 65,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34.8
+  },
+  "clutterShare": 65,
+  "areaShare": 65,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 94,
+   "over": 69,
+   "wordShare": 36.7,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 2,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 98,
+  "textElements": 22
+ }
+}

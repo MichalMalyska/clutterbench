@@ -1,0 +1,106 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:18:37.653Z",
+ "main_idea": "Harness changes informed by BAR raised Legora's output quality by 5% in one month.",
+ "ideas": [
+  "BAR informs harness changes",
+  "Output quality rose 5%",
+  "Gains came on same production models in one month"
+ ],
+ "clutter_score": 4,
+ "grader_clutter_score": 4,
+ "summary": "The graphic draws a three-step flow where one result callout would do, which adds boxes and arrows around a clear +5% result, but it is complete.",
+ "missing": [],
+ "completeness_score": 8,
+ "defects": [],
+ "cost": {
+  "seconds": 8.1,
+  "usd": 0.05054750000000001,
+  "tokens": 22745,
+  "outputTokens": 553
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Arrow connector",
+   "reason": "Small arrow linking the steps; harmless and orients the reader.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "orange",
+   "type": "verbose",
+   "name": "BAR box",
+   "reason": "Process box for the benchmark name; the name could be a short label or footnote.",
+   "ids": [
+    "e1",
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Harness changes box",
+   "reason": "Pipeline step box that spells out the cause; it could be folded into the result label.",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "+5% result",
+   "reason": "The key result with its metric label.",
+   "ids": [
+    "e6",
+    "e7",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Context footnote",
+   "reason": "Short, quiet context: same models, one month.",
+   "ids": [
+    "e9"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 53.9,
+   "orange": 46.1,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 62
+  },
+  "clutterShare": 23.1,
+  "areaShare": 23.1,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 13,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 14,
+  "textElements": 6
+ }
+}

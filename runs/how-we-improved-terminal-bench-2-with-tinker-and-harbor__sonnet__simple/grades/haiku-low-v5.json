@@ -1,0 +1,101 @@
+{
+ "grader": "haiku-low-v5",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:15:32.398Z",
+ "main_idea": "Training lifts gpt-oss-20b Terminal-Bench 2.0 pass rate from 3.1% to 17.0%",
+ "ideas": [
+  "Pass rate rises at each training stage",
+  "SFT plus RLVR reaches 17.0%",
+  "Base model passes 3.1%"
+ ],
+ "clutter_score": 1,
+ "grader_clutter_score": 1,
+ "summary": "Clean and focused: one bar chart with a clear title, labels and values; only the logo is barely visible.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Logo e1 is white on cream background and is nearly invisible in the screenshot",
+  "Benchmark evaluation footnote absent, though not strictly required"
+ ],
+ "cost": {
+  "seconds": 9.3,
+  "usd": 0.00346823,
+  "tokens": 30203,
+  "outputTokens": 1182
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title",
+   "reason": "Names the benchmark, model and metric in one short line.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand logo",
+   "reason": "Single brand mark, appropriate. Renders nearly invisible, see defects.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and value labels",
+   "reason": "The data marks, each with one value label, carrying the main result.",
+   "ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Stage labels",
+   "reason": "Category labels needed to read each bar's stage.",
+   "ids": [
+    "e8",
+    "e9",
+    "e10"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 100,
+   "orange": 0,
+   "red": 0,
+   "unlabelled": 0,
+   "paintedOfCanvas": 33.7
+  },
+  "clutterShare": 0,
+  "areaShare": 0,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 9,
+   "over": 0,
+   "wordShare": 0,
+   "scoreFloor": 0
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {},
+  "coverage": 100,
+  "words": 13,
+  "textElements": 7
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "grader": "sonnet-low-v5",
+ "model": "claude-sonnet-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:19:01.480Z",
+ "main_idea": "AfterQuery warmup lifted Nemotron Ultra's GDPval score from 35.3 to 46.7, near the teacher's 49.5.",
+ "ideas": [
+  "Warmup raises GDPval score close to teacher",
+  "Method pipeline: tasks, SFT warmup, pivot RL",
+  "Nemotron research context"
+ ],
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "summary": "A solid bar chart is cluttered by an eyebrow, a subtitle, a duplicate legend, a method-steps row and a footer URL.",
+ "missing": [],
+ "completeness_score": 9,
+ "defects": [
+  "Gap pill overlaps the With warmup and Teacher bars",
+  "Connector bracket near the teacher bar looks awkward"
+ ],
+ "cost": {
+  "seconds": 9.7,
+  "usd": 0.0655096,
+  "tokens": 28090,
+  "outputTokens": 1057
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0",
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag, tells the reader nothing needed.",
+   "ids": [
+    "e8"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "Large slogan-like sentence; could be: \"Warmup closes GDPval gap to teacher\"",
+   "ids": [
+    "e23"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle paragraph",
+   "reason": "Explains method and restates the chart.",
+   "ids": [
+    "e24"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title",
+   "reason": "Names benchmark and what is shown.",
+   "ids": [
+    "e25"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "repetition",
+   "name": "Legend",
+   "reason": "Duplicates the 'With warmup' bar label.",
+   "ids": [
+    "e26"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and labels",
+   "reason": "Bars, values and category labels carry the result.",
+   "ids": [
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32",
+    "e35",
+    "e36",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44",
+    "e45"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "blue",
+   "type": "core",
+   "name": "Gap annotation",
+   "reason": "Marks gap between warmup and teacher.",
+   "ids": [
+    "e33",
+    "e34",
+    "e37"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method steps row",
+   "reason": "Pipeline description serves a second point, not the result.",
+   "ids": [
+    "e46",
+    "e47",
+    "e48",
+    "e49",
+    "e50",
+    "e51",
+    "e52"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "blue",
+   "type": "core",
+   "name": "Source footnote",
+   "reason": "Quiet evaluation source line.",
+   "ids": [
+    "e53",
+    "e54"
+   ]
+  },
+  {
+   "rid": "r10",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer URL",
+   "reason": "Second brand mention beyond the logo.",
+   "ids": [
+    "e55"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 58.8,
+   "orange": 17.9,
+   "red": 23.3,
+   "unlabelled": 0,
+   "paintedOfCanvas": 34.1
+  },
+  "clutterShare": 35.5,
+  "areaShare": 32.3,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 86,
+   "over": 61,
+   "wordShare": 35.5,
+   "scoreFloor": 5
+  },
+  "ideaCount": 3,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "repetition": 2,
+   "extra_idea": 1
+  },
+  "coverage": 100,
+  "words": 92,
+  "textElements": 26
+ }
+}

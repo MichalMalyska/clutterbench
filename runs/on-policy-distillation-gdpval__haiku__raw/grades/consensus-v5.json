@@ -1,0 +1,184 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.575Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 13,
+  "tiebreak": true,
+  "scores": [
+   5,
+   5,
+   5
+  ]
+ },
+ "main_idea": "On-policy distillation gives about +21% net win-loss margin on GDPval for both Nemotron and Qwen students.",
+ "ideas": [
+  "Distillation lifts Nemotron on GDPval",
+  "Same recipe works on Qwen",
+  "Nemotron wins 123 of 220 tasks",
+  "Result is statistically significant"
+ ],
+ "summary": "The stat rows carry the result, but a slogan headline, eyebrow, subtitle, a second win/tie/loss bar and extra footnotes clutter it.",
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "completeness_score": 9,
+ "missing": [],
+ "defects": [
+  "Bottom divider at y~1179 is nearly at canvas edge, looks like a stray rule",
+  "Net win-loss margin metric is labelled but never defined for a non-reader"
+ ],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark.",
+   "ids": [
+    "e0"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag adds nothing.",
+   "ids": [
+    "e1"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Names the method, not the finding; no result stated.",
+   "ids": [
+    "e2",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Explanatory subtitle",
+   "reason": "Paragraph explaining method; restates set-up.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Result stat rows",
+   "reason": "Main result: both models' margin and rubric gains with labels.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e20",
+    "e21"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Nemotron net margin result",
+   "reason": "Main result value, model, teacher and metric label.",
+   "ids": [
+    "e11"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Qwen net margin result",
+   "reason": "Second-family result shows the claimed reproduction.",
+   "ids": [
+    "e19"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Win/tie/loss bar",
+   "reason": "Second chart restating the Nemotron margin already shown in the stats.",
+   "ids": [
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Side footnotes",
+   "reason": "Sign test and training set size serve secondary points.",
+   "ids": [
+    "e30",
+    "e31"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Bottom rule",
+   "reason": "Decorative divider line.",
+   "ids": [
+    "e32"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 30.8,
+   "orange": 0,
+   "red": 69.2,
+   "unlabelled": 0,
+   "paintedOfCanvas": 39.7
+  },
+  "clutterShare": 69.2,
+  "areaShare": 69.2,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 91,
+   "over": 66,
+   "wordShare": 36.3,
+   "scoreFloor": 5
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 5,
+   "repetition": 8,
+   "extra_idea": 2
+  },
+  "coverage": 100,
+  "words": 102,
+  "textElements": 25
+ }
+}

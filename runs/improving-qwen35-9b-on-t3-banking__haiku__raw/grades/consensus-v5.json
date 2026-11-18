@@ -1,0 +1,189 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.551Z",
+ "consensus": {
+  "haikuAgreed": false,
+  "elementsChanged": 1,
+  "tiebreak": true,
+  "scores": [
+   7,
+   6,
+   6
+  ]
+ },
+ "main_idea": "Qwen3.5-9B improved from 11.3% to 17.5% pass@5 on τ³-Banking.",
+ "ideas": [
+  "Pass@5 rose from 11.3% to 17.5%",
+  "Method: distill teacher, then PivotRL",
+  "Key training and eval numbers",
+  "No general capability change"
+ ],
+ "summary": "The 11.3% to 17.5% result is clear, but the pipeline cards, stats row, pill, subtitle and footer crowd it, and the headline is not the finding.",
+ "clutter_score": 6,
+ "grader_clutter_score": 6,
+ "completeness_score": 9,
+ "missing": [],
+ "defects": [
+  "Stats row top border touches the bottom of pipeline cards"
+ ],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "Single brand mark with wordmark.",
+   "ids": [
+    "e0",
+    "e2"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Research date pill",
+   "reason": "Badge/tag adds nothing to the result.",
+   "ids": [
+    "e1",
+    "e3"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "orange",
+   "type": "verbose",
+   "name": "Headline",
+   "reason": "Sentence-style headline, not the finding; could be: \"11.3% → 17.5% on τ³-Banking\"",
+   "ids": [
+    "e4",
+    "e5"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle",
+   "reason": "Tagline restating the method, not the result.",
+   "ids": [
+    "e6"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Result comparison",
+   "reason": "Core before/after values with pass@5 labels and bars.",
+   "ids": [
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Pass@5 before-after bars",
+   "reason": "Bars with values, labels and metric name; the main result.",
+   "ids": [
+    "e13"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Method pipeline cards",
+   "reason": "Pipeline of stages is a second point beside the result.",
+   "ids": [
+    "e18",
+    "e19",
+    "e20",
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31",
+    "e32"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Stats row",
+   "reason": "Dataset and hyperparameter counts are unrelated to reading the result.",
+   "ids": [
+    "e33",
+    "e34",
+    "e35",
+    "e36",
+    "e37",
+    "e38",
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer",
+   "reason": "Second brand mention, tagline and decorative dot.",
+   "ids": [
+    "e45",
+    "e46",
+    "e47"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 28.8,
+   "orange": 29.6,
+   "red": 41.6,
+   "unlabelled": 0,
+   "paintedOfCanvas": 35.7
+  },
+  "clutterShare": 56.4,
+  "areaShare": 56.4,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 107,
+   "over": 82,
+   "wordShare": 38.3,
+   "scoreFloor": 6
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 3,
+   "extra_idea": 27,
+   "repetition": 3
+  },
+  "coverage": 100,
+  "words": 125,
+  "textElements": 32
+ }
+}

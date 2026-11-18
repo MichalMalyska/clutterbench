@@ -1,0 +1,179 @@
+{
+ "grader": "consensus-v5",
+ "protocol": "haiku-low-v5 x2, sonnet-low-v5 tiebreak",
+ "gradedAt": "2026-11-18T01:20:48.537Z",
+ "consensus": {
+  "haikuAgreed": true,
+  "elementsChanged": 0,
+  "tiebreak": false,
+  "scores": [
+   5
+  ]
+ },
+ "main_idea": "Two-stage SFT plus RLVR lifts gpt-oss-20b Terminal-Bench 2.0 pass rate from 3.1% to 17.0%",
+ "ideas": [
+  "Training lifts Terminal-Bench 2.0 pass rate sharply",
+  "Base 3.1%, SFT only 13.5%, SFT plus RLVR 17.0%",
+  "SFT carries the largest gain from expert-curated data",
+  "Stage 1 teaches workflow; Stage 2 learns from tests",
+  "Training used no official eval tasks"
+ ],
+ "summary": "A solid bar chart is buried under a slogan headline, a stage-card block and redundant brand and takeaway text; nothing essential is missing.",
+ "clutter_score": 5,
+ "grader_clutter_score": 5,
+ "completeness_score": 10,
+ "missing": [],
+ "defects": [],
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "AfterQuery logo",
+   "reason": "One brand mark, kept as the only logo.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag above the chart; tells the reader nothing needed.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding; the chart's result is missing from the headline.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Subtitle restating chart",
+   "reason": "Subtitle restates the model and method already shown in the chart.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Chart title and model",
+   "reason": "Short chart title naming benchmark, metric and model.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7",
+    "e8"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "blue",
+   "type": "core",
+   "name": "Bars and value labels",
+   "reason": "Data marks, category labels, values and axis zero that carry the result.",
+   "ids": [
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e20"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Takeaway sentence",
+   "reason": "Takeaway sentence explaining the chart rather than adding a value.",
+   "ids": [
+    "e19"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "Stage cards and training note",
+   "reason": "Method explanation cards beside the results chart serve a second point.",
+   "ids": [
+    "e21",
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29"
+   ]
+  },
+  {
+   "rid": "r8",
+   "label": "red",
+   "type": "repetition",
+   "name": "Repeated brand URL",
+   "reason": "Brand already shown by the logo; second brand mark is redundant.",
+   "ids": [
+    "e30"
+   ]
+  },
+  {
+   "rid": "r9",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footnote",
+   "reason": "Quiet footnote giving benchmark, task count and averaging.",
+   "ids": [
+    "e31"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 49.5,
+   "orange": 0,
+   "red": 50.5,
+   "unlabelled": 0,
+   "paintedOfCanvas": 38.2
+  },
+  "clutterShare": 50.5,
+  "areaShare": 50.5,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 89,
+   "over": 64,
+   "wordShare": 36,
+   "scoreFloor": 5
+  },
+  "ideaCount": 5,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 4,
+   "extra_idea": 9,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 98,
+  "textElements": 23
+ }
+}

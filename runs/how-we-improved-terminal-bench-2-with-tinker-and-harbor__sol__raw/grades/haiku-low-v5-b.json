@@ -1,0 +1,163 @@
+{
+ "grader": "haiku-low-v5-b",
+ "model": "claude-haiku-5-5",
+ "effort": "low",
+ "prompt": "grader_v5.md",
+ "gradedAt": "2026-11-18T01:17:32.501Z",
+ "main_idea": "Post-training lifts gpt-oss-20b's Terminal-Bench 2.0 pass rate from 3.1% to 17.0%.",
+ "ideas": [
+  "Post-training raises Terminal-Bench 2.0 pass rate sharply",
+  "Base 3.1% rises to 17.0% after SFT plus RLVR",
+  "SFT alone reaches 13.5%",
+  "Pipeline has two stages: SFT then RLVR"
+ ],
+ "clutter_score": 4,
+ "grader_clutter_score": 3,
+ "summary": "The bar chart carries the result cleanly; the slogan headline, eyebrow tag, SFT/RLVR pipeline panel and repeated footer URL are clutter, and nothing essential is missing.",
+ "missing": [],
+ "completeness_score": 10,
+ "defects": [],
+ "cost": {
+  "seconds": 15,
+  "usd": 0.00251939,
+  "tokens": 32437,
+  "outputTokens": 2297
+ },
+ "regions": [
+  {
+   "rid": "r0",
+   "label": "blue",
+   "type": "core",
+   "name": "Brand logo",
+   "reason": "One brand mark, kept as the single logo.",
+   "ids": [
+    "e0",
+    "e1"
+   ]
+  },
+  {
+   "rid": "r1",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Eyebrow tag",
+   "reason": "Category tag above the chart; tells the reader nothing they need.",
+   "ids": [
+    "e2"
+   ]
+  },
+  {
+   "rid": "r2",
+   "label": "red",
+   "type": "unneeded",
+   "name": "Slogan headline",
+   "reason": "Slogan that does not state the finding; the bars carry the result.",
+   "ids": [
+    "e3"
+   ]
+  },
+  {
+   "rid": "r3",
+   "label": "blue",
+   "type": "core",
+   "name": "Model and method subtitle",
+   "reason": "Names the model and tools, short context for the chart.",
+   "ids": [
+    "e4"
+   ]
+  },
+  {
+   "rid": "r4",
+   "label": "blue",
+   "type": "core",
+   "name": "Pass-rate bar chart",
+   "reason": "Main visual: three labelled bars, values, metric, gridlines and bar labels.",
+   "ids": [
+    "e5",
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17",
+    "e18",
+    "e19",
+    "e20",
+    "e21"
+   ]
+  },
+  {
+   "rid": "r5",
+   "label": "red",
+   "type": "extra_idea",
+   "name": "SFT and RLVR pipeline panel",
+   "reason": "Method explainer cards beside the results chart; a second point about how training works.",
+   "ids": [
+    "e22",
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31"
+   ]
+  },
+  {
+   "rid": "r6",
+   "label": "blue",
+   "type": "core",
+   "name": "Evaluation footnote",
+   "reason": "Quiet footnote giving benchmark, task count and averaging.",
+   "ids": [
+    "e32",
+    "e33"
+   ]
+  },
+  {
+   "rid": "r7",
+   "label": "red",
+   "type": "repetition",
+   "name": "Footer URL",
+   "reason": "Brand already shown by the logo at top; repeated site name.",
+   "ids": [
+    "e34"
+   ]
+  }
+ ],
+ "metrics": {
+  "shares": {
+   "blue": 65.9,
+   "orange": 0,
+   "red": 34.1,
+   "unlabelled": 0,
+   "paintedOfCanvas": 45.3
+  },
+  "clutterShare": 35.1,
+  "areaShare": 34.1,
+  "wordBudget": {
+   "budget": 25,
+   "counted": 84,
+   "over": 59,
+   "wordShare": 35.1,
+   "scoreFloor": 4
+  },
+  "ideaCount": 4,
+  "missingCount": 0,
+  "redByType": {
+   "unneeded": 2,
+   "extra_idea": 1,
+   "repetition": 1
+  },
+  "coverage": 100,
+  "words": 90,
+  "textElements": 25
+ }
+}
