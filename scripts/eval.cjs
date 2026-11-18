@@ -8,7 +8,8 @@
 //   - Adam's 0-10 clutter score.
 //   - whether his notes say key information is missing or unreadable.
 //
-//   node scripts/eval.cjs [--graders a,b] [--detail grader] [--split dev]
+//   node scripts/eval.cjs [--graders a,b] [--detail grader] [--split dev] [--reviewer name]
+// --reviewer reads annotations/<name>/ instead of Adam's annotations/*.json.
 const fs = require('fs');
 const path = require('path');
 const { areaShares } = require('./grade.cjs');
@@ -21,8 +22,9 @@ const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
 
 function truth() {
   const out = [];
-  for (const f of fs.readdirSync(path.join(ROOT, 'annotations')).sort()) {
-    const ann = readJson(path.join(ROOT, 'annotations', f));
+  const annDir = path.join(ROOT, 'annotations', arg('reviewer', ''));
+  for (const f of fs.readdirSync(annDir).filter((f) => f.endsWith('.json')).sort()) {
+    const ann = readJson(path.join(annDir, f));
     if (!ann.reviewed) continue;
     const dir = path.join(ROOT, 'runs', ann.runId);
     const meta = readJson(path.join(dir, 'meta.json'));
@@ -134,6 +136,7 @@ for (const set of ['test', 'dev']) {
   for (const r of rows) md += `| ${cols.map((c) => r[c] ?? '–').join(' | ')} |\n`;
 }
 fs.mkdirSync(path.join(ROOT, 'reports'), { recursive: true });
-fs.writeFileSync(path.join(ROOT, 'reports/eval.md'), md);
-fs.writeFileSync(path.join(ROOT, 'reports/eval.json'), JSON.stringify(result, null, 1));
+const out = arg('reviewer') ? `reports/eval-${arg('reviewer')}` : 'reports/eval';
+fs.writeFileSync(path.join(ROOT, `${out}.md`), md);
+fs.writeFileSync(path.join(ROOT, `${out}.json`), JSON.stringify(result, null, 1));
 console.log(md);

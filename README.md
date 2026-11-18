@@ -34,11 +34,14 @@ All model calls go through the `claude` and `codex` CLIs on subscription auth. N
 
 Click mode (default): every element is a box; pick a colour (`1` red, `2` orange, `3` blue, `0` erase) and click or drag across elements. `Rest → blue` fills what is left. Press `g` to show the grader: its labels appear as dashed outlines, then accept or reject each region and missing-info item. Draw mode is Excalidraw over the screenshot, for free marks and written notes. Everything autosaves to `annotations/<run>.json`. `[` and `]` step through runs.
 
+A second reviewer labels the same runs into their own folder, blind to the grader: `CB_REVIEWER=<name> CB_BLIND=1 CB_SET=adam npm start` saves to `annotations/<name>/`, sends no grader output, and lists only the runs Adam reviewed. Tick `reviewed` and give a 0 to 10 score on each. `node scripts/eval.cjs --reviewer <name>` then scores the graders against that reviewer and writes `reports/eval-<name>.md` (the missing-information column still uses Adam's list in `data/split.json`).
+
 `npm run compare` takes click labels as exact and falls back to strokes (a stroke labels the smallest element under it), then reports agreement, a confusion table, every disagreement and your notes.
 
 ## Grader versions and eval
 
 - `grader_v4.md` is current: strict cut rules, strict missing-information check, rendering defects listed separately, clutter score calibrated to Adam's scores.
+- `grader_v5.md`: v4 with the seven-word headline rule replaced by a padding rule, illustration-only marks counted as clutter, a method diagram in place of the post's result marked `extra_idea`. Run `haiku-low-v5`, `haiku-low-v5-b`, then `node scripts/consensus.cjs --version v5`.
 - Graders are named `<model>-<effort>-<version>` (e.g. `luna-low-v4`); see `GRADERS` in `scripts/grade.cjs`. Default: `luna-low-v4`.
 - `node scripts/eval.cjs` scores every grader against Adam's reviews, split by article into dev and held-out test (`data/split.json`), and writes `reports/eval.md`.
 - Official protocol: `consensus-v4`. Run `haiku-low-v4` and `haiku-low-v4-b`, then `node scripts/consensus.cjs`; Sonnet (`sonnet-low-v4`) breaks the tie on any run where the two Haiku passes differ.

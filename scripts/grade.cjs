@@ -22,9 +22,10 @@ const GRADERS = {
 const V3_MODELS = { haiku: ['claude', 'claude-haiku-5-5'], sonnet: ['claude', 'claude-sonnet-5-5'], luna: ['codex', 'gpt-6-luna'] };
 for (const [m, [cli, model]] of Object.entries(V3_MODELS))
   for (const effort of ['low', 'medium', 'high', 'xhigh'])
-    for (const v of ['v3', 'v4']) GRADERS[`${m}-${effort}-${v}`] = { cli, model, effort, prompt: `grader_${v}.md` };
+    for (const v of ['v3', 'v4', 'v5']) GRADERS[`${m}-${effort}-${v}`] = { cli, model, effort, prompt: `grader_${v}.md` };
 // second independent pass of the same grader, for the consensus protocol
 GRADERS['haiku-low-v4-b'] = { ...GRADERS['haiku-low-v4'] };
+GRADERS['haiku-low-v5-b'] = { ...GRADERS['haiku-low-v5'] };
 
 function arg(name, def) {
   const i = process.argv.indexOf(`--${name}`);

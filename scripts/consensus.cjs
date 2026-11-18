@@ -14,7 +14,8 @@ const { areaShares } = require('./grade.cjs');
 
 const ROOT = path.join(__dirname, '..');
 const RUNS = process.env.CB_RUNS || path.join(ROOT, 'runs'); // CB_RUNS: grade something other than benchmark runs
-const A = 'haiku-low-v4', B = 'haiku-low-v4-b', T = 'sonnet-low-v4', OUT = 'consensus-v4';
+const V = process.argv.includes('--version') ? process.argv[process.argv.indexOf('--version') + 1] : 'v4';
+const A = `haiku-low-${V}`, B = `haiku-low-${V}-b`, T = `sonnet-low-${V}`, OUT = `consensus-${V}`;
 const read = (id, g) => {
   const p = path.join(RUNS, id, 'grades', `${g}.json`);
   return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : null;

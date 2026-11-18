@@ -10,7 +10,7 @@ Open the screenshot and look at it. Read the source material. Decide the ONE mai
 - the chart or diagram marks (bars, lines, points, flow shapes, gridlines, axis);
 - the text needed to read them: category labels, one value label per mark, axis ticks, one legend;
 - short context that tells the reader what they are looking at: the model or system, the benchmark, the metric or unit, a short chart title, an axis label. Keep when short and said once. Identifying what is measured is information, not clutter;
-- a short headline that names the finding like a title, about seven words or fewer, even if it wraps to two lines ("Over 5x on Terminal-Bench 2.0");
+- a short headline that names the finding like a title, even if it wraps to two lines ("Over 5x on Terminal-Bench 2.0"), or a plain chart title naming the metric ("Clutter score");
 - a small annotation on the chart itself that marks the change between two bars ("+6.2 percentage points" next to the bars);
 - a small, quiet footnote giving evaluation details (benchmark, number of tasks, how runs were averaged) or a contact line;
 - ONE brand mark (logo or wordmark). The only logo always stays.
@@ -18,16 +18,20 @@ Open the screenshot and look at it. Read the source material. Decide the ONE mai
 **Shrink**: the information is worth having, but it takes far more room or words than it should. The fix is to shorten it, make it smaller, fold it into the chart, or replace it with a logo or footnote. Examples:
 - a headline written as a full sentence ("Training lifts terminal task pass rate more than 5x." could be "5x uplift on Terminal-Bench 2.0");
 - a headline or sentence that spells out something the chart could show visually;
-- a row or bar label that is wordier than needed ("Qwen3.5-9B, selected checkpoint").
+- a row or bar label that is wordier than needed ("Qwen3.5-9B, selected checkpoint");
+- a headline padded at any length: it narrates the chart's set-up ("X, before and after Y", "X with and without Y", "X: A vs B"), repeats the legend or labels (a condition name in quotes), or says the finding the long way round ("falls when asked to keep it simple" for "cuts"). Judge padding, not word count. Give the shorter version;
+- a count drawn as many repeated marks where the number alone would do.
 
 **Remove**, giving each one type:
-- `unneeded`: it tells the reader nothing they need. Slogan headlines that do not state the finding ("A warmup that moves the needle"), eyebrow or kicker lines above a headline, category or series tags ("Research · Model training"), section numbers, badges and pills, subtitles and paragraphs that explain or restate the chart, takeaway sentences, taglines, decorative shapes.
+- `unneeded`: it tells the reader nothing they need. Slogan headlines that do not state the finding ("A warmup that moves the needle"), eyebrow or kicker lines above a headline, category or series tags ("Research · Model training"), section numbers, badges and pills, subtitles and paragraphs that explain or restate the chart, takeaway sentences, taglines, decorative shapes, marks that encode no number or category from the source (rows of identical icons, dots or curves, stacked-card effects).
 - `extra idea`: it serves a second point unrelated to reading the main visual. A second chart, method or pipeline cards beside a results chart, a stats row about dataset sizes or other benchmarks, a side panel, a table next to the chart.
 - `repetition`: the same information is already shown elsewhere. A big stat card or callout box restating a difference the bars already show ("5.5x", "+10.4 points" in their own boxes); a result repeated in a card under the chart; a legend AND the same labels on every bar; the same phrase on every row; the brand shown a second time (footer wordmark when there is already a logo). Keep the best single instance and remove the others.
 
 How to decide:
 - Remove versus keep: the question is not "could the reader survive without it" but "does it help or orient the reader, or is it at least harmless". Small, quiet, useful context stays. Do not strip a graphic down to bare bars.
 - Remove versus shrink: shrink is for the title, labels and values of the main visual when they are too long or too big. Whole blocks beside or below the main visual are removed, even when what they say is true and relevant.
+- If the source's most important claim is a result and the largest visual does not show it (it draws the method or pipeline instead), remove that diagram as an extra idea and list the result under Missing.
+- Judge the total text, not only each piece. Many short labels, notes or stats add up: each can look fine alone while the graphic carries far more text than its one point needs. When it does, remove or shrink the least needed pieces and score it as having extras. As a guide, one point rarely needs more than about 25 words, numbers not counted.
 - A clean simple graphic (one chart, a short title, a logo, a few labels) usually has nothing to change. Do not hunt for something to mark.
 
 Treat things that form one visual unit as one item (a footer's items; a callout box and everything in it).
@@ -48,6 +52,7 @@ Clutter score, 0 to 10, calibrated to the owner's scores:
 - 4-5: a solid main visual, plus a block of extras that should go.
 - 7-8: the main visual is a small part of the canvas; most of what is drawn is extras.
 - 9-10: no clear main visual at all, or it is buried.
+- A method diagram in place of the source's result: at least 6.
 
 ## Missing information
 
