@@ -28,7 +28,7 @@ All model calls go through the `claude` and `codex` CLIs on subscription auth. N
 
 - The grader sees the screenshot, the article and the element list, and returns regions of element ids with a label, a type (`unneeded`, `extra_idea`, `repetition`, `verbose`, `core`) and a reason.
 - Headline metric: `clutterShare` = red% + half of orange%, as a share of the drawn area (blank canvas is not counted).
-- v5 graders also charge for text: words past a budget of 25 (numbers not counted, since one value label per mark is fine) count like orange, as a share of all words drawn. `clutterShare` is then the larger of the area share and this word share, and the 0 to 10 score cannot sit below one point per 15 words over budget. Both parts are kept in the grade (`metrics.areaShare`, `metrics.wordBudget`, `grader_clutter_score`). The budget is `WORD_BUDGET` in `scripts/grade.cjs`; every graphic Adam scored 0 has 15 words or fewer.
+- v5 graders also count words past 25 (numbers not counted) as half-weight clutter: `clutterShare` is the larger of the area share and this word share, and the 0-10 score has a floor of one point per 15 words over (`WORD_BUDGET` in `scripts/grade.cjs`).
 - Add graders (model + prompt file) in `GRADERS` in `scripts/grade.cjs`.
 
 ## Review UI
@@ -39,11 +39,11 @@ Click mode (default): every element is a box; pick a colour (`1` red, `2` orange
 
 ## Grader versions and eval
 
-- `grader_v4.md`: strict cut rules, strict missing-information check, rendering defects listed separately, clutter score calibrated to Adam's scores.
-- `grader_v5.md` (proposed): v4 plus three fixes. (1) Headlines are judged on padding, not on a seven-word limit: narrating the chart's set-up ("Clutter score, before and after "keep it simple""), repeating the legend, or a roundabout clause ("Clutter score falls when asked to keep it simple") is orange whatever the length. (2) Marks must carry data: illustration such as 16 curves standing for "16 continuations", dot rows and stacked-card effects is clutter even when there is little text. (3) The main idea comes from the post before the grader looks at the graphic, so a method diagram drawn in place of the post's result is marked `extra_idea` and the result is listed as missing. It also applies the word budget above.
+- `grader_v4.md` is current: strict cut rules, strict missing-information check, rendering defects listed separately, clutter score calibrated to Adam's scores.
+- `grader_v5.md`: v4 with the seven-word headline rule replaced by a padding rule, illustration-only marks counted as clutter, a method diagram in place of the post's result marked `extra_idea`, and the word budget above. Run `haiku-low-v5`, `haiku-low-v5-b`, then `node scripts/consensus.cjs --version v5`.
 - Graders are named `<model>-<effort>-<version>` (e.g. `luna-low-v4`); see `GRADERS` in `scripts/grade.cjs`. Default: `luna-low-v4`.
 - `node scripts/eval.cjs` scores every grader against Adam's reviews, split by article into dev and held-out test (`data/split.json`), and writes `reports/eval.md`.
-- Official protocol: `consensus-v4`. Run `haiku-low-v4` and `haiku-low-v4-b`, then `node scripts/consensus.cjs`; Sonnet (`sonnet-low-v4`) breaks the tie on any run where the two Haiku passes differ. The same protocol on v5: `haiku-low-v5`, `haiku-low-v5-b`, then `node scripts/consensus.cjs --version v5`.
+- Official protocol: `consensus-v4`. Run `haiku-low-v4` and `haiku-low-v4-b`, then `node scripts/consensus.cjs`; Sonnet (`sonnet-low-v4`) breaks the tie on any run where the two Haiku passes differ.
 - Public site: `node scripts/build_site.cjs` writes `site/data.json` and `site/shots/`; `site/` is static and is published to ChatGPT Sites from `site-host/`.
 - Caveat: some of Adam's element labels were started from `haiku-v2` via Copy grader, so that grader's label agreement is inflated.
 

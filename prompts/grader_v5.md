@@ -2,17 +2,15 @@ You are grading a graphic that was made to accompany a blog post. A reader glanc
 
 You grade clutter (what is there and should not be), missing information (what is not there and must be), and rendering defects.
 
-Before you look at the graphic, read the post and decide its ONE main idea: the most important claim it makes. When the post reports a result (a score, a before/after, a comparison), the main idea is that result.
-
-Then Read the screenshot at `{{SHOT}}` and look at it. Then use the element list below: every visible element of the same graphic with an id, kind, bounding box (x,y,width,height in px on a {{W}}x{{H}} canvas), font size, and text.
+First Read the screenshot at `{{SHOT}}` and look at it. Then use the element list below: every visible element of the same graphic with an id, kind, bounding box (x,y,width,height in px on a {{W}}x{{H}} canvas), font size, and text.
 
 ## Clutter: label every element
 
 - `blue` = keep as is. This covers:
-  - the marks that carry data: bars, lines, points, gridlines, axis. In a diagram, one plain shape per step the main idea needs;
+  - the chart or diagram marks (bars, lines, points, flow shapes, gridlines, axis);
   - the text needed to read them: category labels, one value label per mark, axis ticks, one legend;
   - short context that tells the reader what they are looking at: the model or system, the benchmark, the metric or unit, a short chart title, an axis label. Blue when short and said once. Identifying what is measured is information, not clutter;
-  - a headline that does one job in as few words as it can: it names the finding ("Over 5x on Terminal-Bench 2.0", "A simple prompt cuts clutter"), or it names what is measured as a plain chart title ("Clutter score", "DeepSWE pass@1"). Wrapping to two lines is fine;
+  - a short headline that names the finding like a title, even if it wraps to two lines ("Over 5x on Terminal-Bench 2.0"), or a plain chart title naming the metric ("Clutter score");
   - a small annotation on the chart itself that marks the change between two bars ("+6.2 percentage points" next to the bars);
   - a small, quiet footnote giving evaluation details (benchmark, number of tasks, how runs were averaged) or a contact line;
   - ONE brand mark (logo or wordmark). Never mark the only logo red.
@@ -20,25 +18,17 @@ Then Read the screenshot at `{{SHOT}}` and look at it. Then use the element list
   - a headline written as a full sentence ("Training lifts terminal task pass rate more than 5x." could be "5x uplift on Terminal-Bench 2.0");
   - a headline or sentence that spells out something the chart could show visually;
   - a row or bar label that is wordier than needed ("Qwen3.5-9B, selected checkpoint");
-  - a padded headline (see below);
-  - a diagram with more steps, branches or detail than the main idea needs; a count drawn as many repeated marks where the number alone would do.
-
-Headlines: judge the padding, never the word count. A short headline can be padded and a longer one can be tight. A headline is orange when it does any of these:
-  - narrates the chart's set-up instead of stating the finding or simply naming the metric: "X, before and after Y", "X with and without Y", "X: A vs B", "X across models", "Comparing X ...". The legend and labels already show the set-up. The fix is the bare metric ("Clutter score") or the finding ("A simple prompt cuts clutter");
-  - repeats the chart's own labels: it quotes a condition, series or legend name the chart already shows (a prompt name in quotes, "raw vs simple prompt"), or restates its values ("from 35.3 to 46.7");
-  - says the finding the long way round: a clause where a verb would do ("falls when asked to keep it simple" for "cuts"), passive voice, or two clauses ("A better training signal. A 5x stronger terminal agent.").
-To check, write the shortest headline that still tells the reader everything they cannot read off the chart. Words that name the metric, benchmark, model, method, or the baseline a number is compared with are information, not padding. If your shorter version drops only a word or two, the headline is fine: keep it blue. When you mark a headline orange, put your shorter version in the reason as `could be: "..."`.
-
+  - a headline padded at any length: it narrates the chart's set-up ("X, before and after Y", "X with and without Y", "X: A vs B"), repeats the legend or labels (a condition name in quotes), or says the finding the long way round ("falls when asked to keep it simple" for "cuts"). Judge padding, not word count. Put the shorter version in the reason;
+  - a count drawn as many repeated marks where the number alone would do;
 - `red` = remove it. Give each red region one `type`:
-  - `unneeded`: it tells the reader nothing they need. Slogan headlines that do not state the finding ("A warmup that moves the needle"), eyebrow / kicker lines above a headline, category or series tags ("Research · Model training"), section numbers, badges and pills, subtitles and paragraphs that explain or restate the chart, takeaway sentences, taglines, decorative shapes. Also marks that encode nothing: rows of identical icons, dots or curves standing for a count ("16 continuations" drawn as 16 lines), stacked-card and shadow effects, texture, ornamental connectors, little document or tool glyphs.
-  - `extra_idea`: it serves a second point unrelated to reading the main visual. A second chart, method or pipeline cards beside a results chart, a stats row about dataset sizes or other benchmarks, a side panel, a table next to the chart. Judge against the main idea you took from the post, not against whatever the largest visual happens to show.
+  - `unneeded`: it tells the reader nothing they need. Slogan headlines that do not state the finding ("A warmup that moves the needle"), eyebrow / kicker lines above a headline, category or series tags ("Research · Model training"), section numbers, badges and pills, subtitles and paragraphs that explain or restate the chart, takeaway sentences, taglines, decorative shapes, marks that encode no number or category from the post (rows of identical icons, dots or curves, stacked-card effects).
+  - `extra_idea`: it serves a second point unrelated to reading the main visual. A second chart, method or pipeline cards beside a results chart, a stats row about dataset sizes or other benchmarks, a side panel, a table next to the chart. Decide the ONE main idea (the post's most important claim, which the largest visual supports).
   - `repetition`: the same information is already shown elsewhere. A big stat card or callout box restating a difference the bars already show ("5.5x", "+10.4 points" in their own boxes); a result repeated in a card under the chart; a legend AND the same labels on every bar; the same phrase on every row; the model named in a label and again in the chart; the brand shown a second time (footer wordmark when there is already a logo). Keep the best single instance `blue` and mark the others red.
 
 How to decide:
 - Red versus blue: the question is not "could the reader survive without it" but "does it help or orient the reader, or is it at least harmless". Small, quiet, useful context stays blue. Do not strip a graphic down to bare bars.
 - Red versus orange: orange is for the title, labels and values of the main visual when they are too long or too big. Whole blocks beside or below the main visual are red, even when what they say is true and relevant.
-- Marks are not free because they are not text. Ask of every shape what number or category from the post it stands for. If none, it is illustration: red `unneeded`, or orange when a simpler form would carry the same information.
-- Wrong main visual: if the post's main idea is a result and the graphic's main visual does not show it (it draws the method, pipeline or architecture instead), list the result in `missing` and mark that diagram red `extra_idea`, however tidy it looks.
+- If the post's most important claim is a result and the largest visual does not show it (it draws the method or pipeline instead), mark that diagram red `extra_idea` and list the result in `missing`.
 - A clean simple graphic (one chart, a short title, a logo, a few labels) is usually all blue. Do not hunt for something to mark.
 
 Group elements that form one visual unit into one region (a footer's items; a callout box and everything in it). Every element id must appear in exactly one region. A container (`box`) always takes the label of what it contains; do not make a separate region for a card's frame or border.
@@ -54,25 +44,19 @@ Calibration, from the benchmark owner's own labels on past graphics:
 - Bottom rows of dataset counts and other benchmark results under a before/after chart -> red `extra_idea`.
 - The AfterQuery logo -> blue. Small tag "GDPval · Nemotron 3 Ultra" -> blue.
 
-Headlines, from review feedback on graphics of the ClutterBench results:
-- Headline "Clutter score, before and after "keep it simple"" above a chart whose legend already says Raw prompt / Simple prompt -> orange `verbose`. It narrates the set-up and quotes the condition: could be "Clutter score".
-- Headline "Clutter score falls when asked to keep it simple" -> orange `verbose`. The long way round: could be "A simple prompt cuts clutter".
-- Headlines "Clutter score" and "A simple prompt cuts clutter" on the same chart -> blue.
-
 Clutter score, 0 to 10, calibrated to the owner's scores:
 - 0: nothing to remove. 1-2: one thing could be shorter.
 - 4-5: a solid main visual, plus a block of extras that should go.
 - 7-8: the main visual is a small part of the canvas; most elements are extras.
 - 9-10: no clear main visual at all, or it is buried.
-- A main visual that shows a method or pipeline instead of the post's result scores at least 6, even with little text. A dense diagram where most marks are illustration scores at least 5.
+- A method diagram in place of the post's result: at least 6.
 
 ## Missing information
 
 Be strict here: most graphics are missing nothing. List something in `missing` only when a reader who has not read the post:
 - cannot tell what was measured (no benchmark or metric named anywhere), or
 - cannot tell what the bars or marks stand for, or
-- cannot work out what the main visual is showing without having it explained, or
-- cannot find the post's main result, because the graphic shows something else (for example the method) instead.
+- cannot work out what the main visual is showing without having it explained.
 
 Leaving out the model name, methods, dataset sizes, dates, sources and caveats is fine. A simple chart with a benchmark name, labelled bars and values is complete.
 
