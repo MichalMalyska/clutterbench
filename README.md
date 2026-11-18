@@ -28,7 +28,6 @@ All model calls go through the `claude` and `codex` CLIs on subscription auth. N
 
 - The grader sees the screenshot, the article and the element list, and returns regions of element ids with a label, a type (`unneeded`, `extra_idea`, `repetition`, `verbose`, `core`) and a reason.
 - Headline metric: `clutterShare` = red% + half of orange%, as a share of the drawn area (blank canvas is not counted).
-- v5 graders also count words past 25 (numbers not counted) as half-weight clutter: `clutterShare` is the larger of the area share and this word share, and the 0-10 score has a floor of one point per 15 words over (`WORD_BUDGET` in `scripts/grade.cjs`).
 - Add graders (model + prompt file) in `GRADERS` in `scripts/grade.cjs`.
 
 ## Review UI
@@ -40,7 +39,7 @@ Click mode (default): every element is a box; pick a colour (`1` red, `2` orange
 ## Grader versions and eval
 
 - `grader_v4.md` is current: strict cut rules, strict missing-information check, rendering defects listed separately, clutter score calibrated to Adam's scores.
-- `grader_v5.md`: v4 with the seven-word headline rule replaced by a padding rule, illustration-only marks counted as clutter, a method diagram in place of the post's result marked `extra_idea`, and the word budget above. Run `haiku-low-v5`, `haiku-low-v5-b`, then `node scripts/consensus.cjs --version v5`.
+- `grader_v5.md`: v4 with the seven-word headline rule replaced by a padding rule, illustration-only marks counted as clutter, a method diagram in place of the post's result marked `extra_idea`. Run `haiku-low-v5`, `haiku-low-v5-b`, then `node scripts/consensus.cjs --version v5`.
 - Graders are named `<model>-<effort>-<version>` (e.g. `luna-low-v4`); see `GRADERS` in `scripts/grade.cjs`. Default: `luna-low-v4`.
 - `node scripts/eval.cjs` scores every grader against Adam's reviews, split by article into dev and held-out test (`data/split.json`), and writes `reports/eval.md`.
 - Official protocol: `consensus-v4`. Run `haiku-low-v4` and `haiku-low-v4-b`, then `node scripts/consensus.cjs`; Sonnet (`sonnet-low-v4`) breaks the tie on any run where the two Haiku passes differ.

@@ -31,7 +31,7 @@ How to decide:
 - Remove versus keep: the question is not "could the reader survive without it" but "does it help or orient the reader, or is it at least harmless". Small, quiet, useful context stays. Do not strip a graphic down to bare bars.
 - Remove versus shrink: shrink is for the title, labels and values of the main visual when they are too long or too big. Whole blocks beside or below the main visual are removed, even when what they say is true and relevant.
 - If the source's most important claim is a result and the largest visual does not show it (it draws the method or pipeline instead), remove that diagram as an extra idea and list the result under Missing.
-- Past about 25 words (numbers not counted), there is too much text: score at least one point for every 15 words over.
+- Judge the total text, not only each piece. Many short labels, notes or stats add up: each can look fine alone while the graphic carries far more text than its one point needs. When it does, remove or shrink the least needed pieces and score it as having extras. As a guide, one point rarely needs more than about 25 words, numbers not counted.
 - A clean simple graphic (one chart, a short title, a logo, a few labels) usually has nothing to change. Do not hunt for something to mark.
 
 Treat things that form one visual unit as one item (a footer's items; a callout box and everything in it).

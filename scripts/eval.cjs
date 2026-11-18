@@ -86,7 +86,7 @@ function evalGrader(name, runs, detail) {
         if ((h === 'red') === (x.label === 'red')) cut++;
       }
       if (rn) perRunAcc.push(re / rn);
-      if (t.share != null) shareErr.push(Math.abs((g.metrics.areaShare ?? g.metrics.clutterShare) - t.share));
+      if (t.share != null) shareErr.push(Math.abs(g.metrics.clutterShare - t.share));
     }
     if (t.score != null && g.clutter_score != null) { sa.push(t.score); sg.push(Number(g.clutter_score)); }
     const flagged = (g.missing || []).length > 0;

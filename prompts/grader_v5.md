@@ -29,6 +29,7 @@ How to decide:
 - Red versus blue: the question is not "could the reader survive without it" but "does it help or orient the reader, or is it at least harmless". Small, quiet, useful context stays blue. Do not strip a graphic down to bare bars.
 - Red versus orange: orange is for the title, labels and values of the main visual when they are too long or too big. Whole blocks beside or below the main visual are red, even when what they say is true and relevant.
 - If the post's most important claim is a result and the largest visual does not show it (it draws the method or pipeline instead), mark that diagram red `extra_idea` and list the result in `missing`.
+- Judge the total text, not only each piece. Many short labels, notes or stats add up: each can look fine alone while the graphic carries far more text than its one point needs. When it does, mark the least needed pieces orange or red and score it as having extras. As a guide, one point rarely needs more than about 25 words, numbers not counted.
 - A clean simple graphic (one chart, a short title, a logo, a few labels) is usually all blue. Do not hunt for something to mark.
 
 Group elements that form one visual unit into one region (a footer's items; a callout box and everything in it). Every element id must appear in exactly one region. A container (`box`) always takes the label of what it contains; do not make a separate region for a card's frame or border.
