@@ -34,6 +34,8 @@ All model calls go through the `claude` and `codex` CLIs on subscription auth. N
 
 Click mode (default): every element is a box; pick a colour (`1` red, `2` orange, `3` blue, `0` erase) and click or drag across elements. `Rest → blue` fills what is left. Press `g` to show the grader: its labels appear as dashed outlines, then accept or reject each region and missing-info item. Draw mode is Excalidraw over the screenshot, for free marks and written notes. Everything autosaves to `annotations/<run>.json`. `[` and `]` step through runs.
 
+A second reviewer labels the same runs into their own folder, blind to the grader: `CB_REVIEWER=<name> CB_BLIND=1 CB_SET=adam npm start` saves to `annotations/<name>/`, sends no grader output, and lists only the runs Adam reviewed. Tick `reviewed` and give a 0 to 10 score on each. `node scripts/eval.cjs --reviewer <name>` then scores the graders against that reviewer and writes `reports/eval-<name>.md` (the missing-information column still uses Adam's list in `data/split.json`).
+
 `npm run compare` takes click labels as exact and falls back to strokes (a stroke labels the smallest element under it), then reports agreement, a confusion table, every disagreement and your notes.
 
 ## Grader versions and eval

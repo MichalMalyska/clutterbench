@@ -6,7 +6,11 @@ const path = require('path');
 const PORT = Number(process.env.PORT || 7377);
 const ROOT = __dirname;
 const RUNS = path.join(ROOT, 'runs');
-const ANN = path.join(ROOT, 'annotations');
+// CB_REVIEWER=<name>: save to annotations/<name>/ (Adam's are annotations/*.json).
+// CB_BLIND=1: send no grader output. CB_SET=adam: list only runs Adam reviewed.
+const ANN = path.join(ROOT, 'annotations', process.env.CB_REVIEWER || '');
+const BLIND = process.env.CB_BLIND === '1';
+const inSet = (id) => process.env.CB_SET !== 'adam' || !!(readJson(path.join(ROOT, 'annotations', `${id}.json`)) || {}).reviewed;
 const DIST = path.join(ROOT, 'ui/dist');
 const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.png': 'image/png', '.svg': 'image/svg+xml', '.json': 'application/json', '.woff2': 'font/woff2', '.ico': 'image/x-icon' };
 
@@ -17,6 +21,7 @@ const safeId = (id) => /^[\w.\-]+$/.test(id) && !id.includes('..');
 
 function grades(dir) {
   const g = {};
+  if (BLIND) return g;
   const gd = path.join(dir, 'grades');
   if (fs.existsSync(gd)) for (const f of fs.readdirSync(gd)) if (f.endsWith('.json')) g[f.slice(0, -5)] = readJson(path.join(gd, f));
   return g;
@@ -24,7 +29,7 @@ function grades(dir) {
 
 function listRuns() {
   if (!fs.existsSync(RUNS)) return [];
-  return fs.readdirSync(RUNS).sort().map((id) => {
+  return fs.readdirSync(RUNS).sort().filter(inSet).map((id) => {
     const dir = path.join(RUNS, id);
     const meta = readJson(path.join(dir, 'meta.json'));
     if (!meta || !fs.existsSync(path.join(dir, 'shot.png'))) return null;
